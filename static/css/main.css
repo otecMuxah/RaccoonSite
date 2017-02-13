@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'phenomenalight';
+  src: url("../fonts/phenomena-light.woff") format("woff"), url("../fonts/phenomena-light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'phenomenabold';
+  src: url("../fonts/Phenomena-Bold.woff") format("woff"), url("../fonts/Phenomena-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto-light';
+  src: url("../fonts/roboto-light.woff") format("woff"), url("../fonts/roboto-light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'phenomenaregular';
+  src: url("../fonts/phenomena-regular.woff") format("woff"), url("../fonts/phenomena-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+input:focus,
+input:active {
+  outline: 0; }
+
+button {
+  border: 0; }
+
+select:focus {
+  outline: 0; }
+
+html,
+body {
+  height: 100%; }
+
+.hidden {
+  display: none !important; }
+
+body {
+  min-width: 320px; }
+
+.wrapper {
+  width: 100%; }
+
+.header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 14.45px 2.55px rgba(0, 0, 2, 0.52);
+  position: relative;
+  z-index: 1;
+  color: #fff; }
+  .header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header__logo {
+    background: url("../images/Raccoon_logo.png") no-repeat;
+    width: 165px;
+    height: 50px;
+    display: block;
+    font-size: 0; }
+
+.button {
+  text-transform: uppercase;
+  font: 16px/21px roboto-light, Arial, sans-serif;
+  color: #85d72e;
+  border: 2px solid #85d72e;
+  padding: 5px 15px; }
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 665px; }
+  .header-nav__link {
+    position: relative;
+    color: #fff;
+    font-family: phenomenabold, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 23px; }
+    .header-nav__link:hover::before {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      height: 3px;
+      width: 100%;
+      background: #85d72e; }
+
+.main-banner {
+  width: 100%;
+  background: url("../images/main-banner-bg.jpg") no-repeat;
+  z-index: 0;
+  position: relative;
+  top: -80px;
+  color: #fff;
+  padding: 160px 0; }
+  .main-banner__wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: roboto-light, Arial, sans-serif; }
+  .main-banner__header {
+    font: 86px/100px phenomenaregular, Arial, sans-serif;
+    color: #6699cc;
+    text-transform: uppercase;
+    margin-bottom: 12px; }
+    .main-banner__header--green {
+      color: #85d72e; }
+  .main-banner__paragraph {
+    font: 36px/43px roboto-light, Arial, sans-serif;
+    max-width: 690px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 21px;
+    margin-bottom: 45px; }
+    .main-banner__paragraph:after {
+      content: '';
+      height: 3px;
+      width: 66px;
+      background: #85d72e;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .main-banner__paragraph--small {
+      font: 20px/25px roboto-light, Arial, sans-serif;
+      padding-bottom: 0;
+      margin-bottom: 31px; }
+      .main-banner__paragraph--small:after {
+        display: none; }

@@ -1,0 +1,62 @@
+
+$roboto-light: roboto-light;
+$roboto-regular: roboto-regular;
+$roboto-bold: roboto-bold;
+$roboto-thin: roboto-thin;
+$phenomena-light: phenomena-light;
+$phenomena-bold: phenomena-bold;
+$phenomena-regular: phenomena-regular;
+
+$fonts-list: $roboto-light, $roboto-regular, $roboto-bold, $roboto-thin, $phenomena-regular, $phenomena-light, $phenomena-bold;
+
+@font-face {
+    font-family: 'phenomenalight';
+    src: url('../fonts/phenomena-light.woff') format('woff'), url('../fonts/phenomena-light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'phenomenabold';
+    src: url('../fonts/Phenomena-Bold.woff') format('woff'), url('../fonts/Phenomena-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto-light';
+    src: url('../fonts/roboto-light.woff') format('woff'), url('../fonts/roboto-light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'phenomenaregular';
+    src: url('../fonts/phenomena-regular.woff') format('woff'), url('../fonts/phenomena-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//break points
+$res_550:   550px;
+$res_610:   610px;
+$res_770:   770px;
+$res_960:   960px;
+$res_1000:  1000px;
+$res_1220:  1220px;
+$res_1400:  1400px;
+
+//colors
+$color-blue:            #6699cc;
+$color-yellow:          #e5bd62;
+$color-green:           #85d72e;
+$color-white:           #fff;
+
+
+//fonts
+$font:            roboto-regular, Arial, sans-serif;
+$font_light:      roboto-light, Arial, sans-serif;
+$font_bold:       roboto-bold, Arial, sans-serif;
+$font_thin:       roboto-thin, Arial, sans-serif;
+$font_ph:         phenomenaregular, Arial, sans-serif;
+$font_ph_light:   phenomenalight, Arial, sans-serif;
+$font_ph_bold:    phenomenabold, Arial, sans-serif;
+
+
