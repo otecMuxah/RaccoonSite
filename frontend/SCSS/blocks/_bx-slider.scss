@@ -2,16 +2,31 @@
 .bx-wrapper .bx-controls-direction a {
     width: 13px;
     height: 20px;
+    top: 38%;
+    text-indent: 0;
+    font-size: 0;
 }
 .bx-wrapper .bx-prev {
     background: url(../images/arrow.png) no-repeat;
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(-50%);
+    left: -40px;
+    &:hover {
+        opacity: 0.8;
+    }
 }
 .bx-wrapper .bx-next {
     background: url(../images/arrow.png) no-repeat;
+    right: -40px;
+    transform: translateY(50%);
+    &:hover {
+        opacity: 0.8;
+    }
 }
 .bx-wrapper .bx-viewport {
     border: 0;
     box-shadow: none;
     background: #ebebeb;
+}
+.bx-wrapper .bx-next:hover {
+    background-position: 0 0;
 }

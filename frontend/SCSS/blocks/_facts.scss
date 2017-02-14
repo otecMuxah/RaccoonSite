@@ -1,0 +1,53 @@
+.facts {
+    &__list {
+        display: flex;
+        margin: 0 auto;
+        width: 1140px;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        &:after {
+            content: '';
+            width: 70%;
+            height: 1px;
+            background: $color-green;
+            position: absolute;
+            z-index: 0;
+            top: 27%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 360px;
+    }
+    &__title {
+        font: 700 72px/96px $font_ph;
+        .facts__item--installations & {
+            color: $color-green;
+        }
+        .facts__item--courses & {
+            color: $color-emerald;
+        }
+        .facts__item--sudents & {
+            color: $color-dark-blue;
+        }
+        &--wrapper {
+            background: $color-white;
+            z-index: 1;
+            padding: 0 20px;
+        }
+    }
+    &__header {
+        font: 22px/27px $font_ph_bold;
+        color: $color-black;
+        text-transform: uppercase;
+    }
+    &__paragraph {
+        font: 16px/21px $font_light;
+    }
+}

@@ -1,0 +1,91 @@
+.solutions {
+    width: 100%;
+    &__wrapper {
+        width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        &:after {
+            content: '';
+
+        }
+    }
+    &__item {
+        width: 135px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__image {
+        &--wrapper {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: $color-dark-blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s linear;
+            position: relative;
+            overflow: hidden;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                bottom: -100%;
+                left: 50%;
+                transform: translate3d(-50%,0,0);
+                transition: all 0.3s linear;
+                background: rgba(0,0,0,0.8) url(../images/zoom-tool.png) no-repeat 50% 25%;
+            }
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.3s linear;
+            }
+            &:hover:after {
+                transition: all 0.3s linear;
+                transform: translate3d(-50%,-50%,0);
+            }
+
+        }
+        svg {
+            width: 60px;
+            height: 60px;
+            fill: $color-white;
+        }
+    }
+    &__title {
+        font: 700 28px/35px $font_ph_bold;
+        color: $color-black;
+        position: relative;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 15px;
+            height: 3px;
+            background: $color-emerald;
+        }
+        &:before {
+            left: -30px;
+        }
+        &:after {
+            right: -30px;
+        }
+    }
+    &__text {
+        font: 22px/28px $font_ph_bold;
+        color: $color-black;
+        text-align: center;
+        display: inline-block;
+    }
+}

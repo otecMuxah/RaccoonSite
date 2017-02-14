@@ -9,60 +9,300 @@
     <script src="script/jquery.bxslider.min.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <header class="header__wrapper">
-                <a href="#" class="header__logo">RaccoonGang</a>
-                <ul class="header-nav">
-                    <li class="header-nav__item"><a href="#" class="header-nav__link">ABOUT US</a></li>
-                    <li class="header-nav__item"><a href="#" class="header-nav__link">OPEN edX SERVICES</a></li>
-                    <li class="header-nav__item"><a href="" class="header-nav__link">SOLUTIONS</a></li>
-                    <li class="header-nav__item"><a href="" class="header-nav__link">RACCOON UNIVERSITY</a></li>
-                    <li class="header-nav__item"><a href="" class="header-nav__link">PRICING</a></li>
-                    <li class="header-nav__item"><a href="" class="header-nav__link">BLOG</a></li>
-                    <li class="header-nav__item"><a href="" class="header-nav__link">CONTACT US</a></li>
-                </ul>
-                <a href="#" class="button">Request Demo</a>
-            </header>
-        </div>
-        <div class="main-banner">
-            <div class="main-banner__wrapper">
-                <h1 class="main-banner__header">Online learning <span class="main-banner__header--green">done right!</span></h1>
-                <p class="main-banner__paragraph">We deliver flexible online learning solutions using Open edX</p>
-                <p class="main-banner__paragraph main-banner__paragraph--small">Try our learning management system and deliver online learning using the top-notch learning technology</p>
-                <a href="#" class="button">Request Demo</a>
-            </div>
-        </div>
-        <div class="partners">
-            <ul class="partners__list bxslider">
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/microsft.png" alt="Microsoft"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/edx.png" alt="EDX"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/prometheus.png" alt="Prometheus"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/shindig.png" alt="Shindig"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/ucla.png" alt="UCLA"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/goit.png" alt="GoIT"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/labster.png" alt="Labster"
-                                                                                  class="partners__image"></a></li>
+<svg class="svg-sprite">
+    <symbol id='customer-onboard' viewBox="0 0 38.048 50.611">
+        <path d="M36.758,43.963v6.649H1.121V43.96c0-2.467,2.128-5.508,4.73-6.739l5.788-2.752l4.017,8.37l2.055-5.576
+			c0.405,0.079,0.808,0.18,1.229,0.18c0.422,0,0.824-0.101,1.23-0.18l1.95,5.303l3.935-8.19l5.973,2.84
+			C34.63,38.452,36.758,41.493,36.758,43.963z M18.941,34.375c5.085,0,9.207-6.328,9.207-12.128c0-5.805-4.121-8.884-9.207-8.884
+			c-5.085,0-9.205,3.079-9.205,8.884C9.734,28.047,13.856,34.375,18.941,34.375z M32.696,19.701l-1.985-0.684
+			c0.209-0.606,0.392-1.05,0.548-1.335c0.156-0.287,0.397-0.514,0.72-0.681c0.324-0.173,0.786-0.278,1.392-0.322
+			c0.282-0.008,0.523-0.016,0.729-0.022c0.201-0.009,0.383-0.027,0.54-0.057c0.157-0.03,0.296-0.086,0.407-0.163
+			c0.298-0.191,0.537-0.542,0.711-1.051c0.224-0.649,0.267-1.112,0.131-1.39c-0.071-0.195-0.215-0.356-0.437-0.48
+			c-0.223-0.125-0.562-0.265-1.017-0.42c-0.515-0.161-0.902-0.256-1.16-0.291c-0.252-0.035-0.465-0.001-0.634,0.106
+			c-0.182,0.135-0.363,0.414-0.553,0.842c0.003,0.058-0.014,0.14-0.051,0.244l-0.162,0.467l-1.984-0.681
+			c0.315-0.916,0.633-1.587,0.955-2.012c0.324-0.424,0.686-0.683,1.09-0.779c0.463-0.112,0.942-0.118,1.431-0.019
+			c0.488,0.099,1.074,0.266,1.758,0.501c1.529,0.527,2.446,1.163,2.753,1.914c0.275,0.66,0.215,1.558-0.178,2.701
+			c-0.274,0.792-0.57,1.338-0.893,1.636c-0.323,0.296-0.723,0.49-1.199,0.581c-0.152,0.031-0.405,0.058-0.764,0.075
+			c-0.354,0.017-0.622,0.031-0.798,0.051c-0.178,0.017-0.356,0.067-0.541,0.143c-0.23,0.069-0.381,0.175-0.459,0.317
+			C32.96,19.004,32.842,19.273,32.696,19.701z M30.165,20.598l1.985,0.683l-0.737,2.142l-1.984-0.683L30.165,20.598z M5.903,19.285
+			l-1.68,0.737c-0.226-0.514-0.372-0.907-0.442-1.183c-0.067-0.276-0.049-0.567,0.057-0.867c0.106-0.3,0.343-0.644,0.703-1.032
+			c0.176-0.174,0.328-0.322,0.455-0.446c0.125-0.126,0.231-0.244,0.314-0.357c0.082-0.114,0.136-0.231,0.165-0.348
+			c0.079-0.301,0.023-0.67-0.165-1.096c-0.243-0.551-0.489-0.876-0.743-0.972c-0.16-0.084-0.349-0.1-0.566-0.048
+			c-0.217,0.051-0.516,0.162-0.903,0.332c-0.427,0.205-0.732,0.374-0.916,0.502c-0.184,0.13-0.3,0.276-0.346,0.446
+			c-0.035,0.192,0.013,0.484,0.147,0.869c0.038,0.035,0.075,0.099,0.114,0.188l0.174,0.398l-1.68,0.738
+			c-0.34-0.776-0.533-1.395-0.577-1.862c-0.045-0.465,0.034-0.846,0.236-1.148c0.234-0.346,0.536-0.632,0.91-0.859
+			c0.372-0.226,0.849-0.465,1.429-0.723c1.294-0.568,2.262-0.703,2.905-0.405c0.567,0.26,1.063,0.875,1.487,1.841
+			c0.296,0.673,0.428,1.199,0.396,1.582c-0.032,0.381-0.173,0.742-0.424,1.085c-0.08,0.113-0.228,0.282-0.448,0.502
+			c-0.219,0.221-0.379,0.391-0.484,0.507c-0.104,0.117-0.189,0.256-0.262,0.415c-0.106,0.178-0.141,0.335-0.108,0.472
+			C5.661,18.681,5.744,18.923,5.903,19.285z M4.808,21.362l1.682-0.74l0.798,1.815l-1.682,0.736L4.808,21.362z M17.189,8.778
+			l-1.891-0.925c0.282-0.577,0.518-0.999,0.708-1.265c0.189-0.263,0.459-0.461,0.801-0.59c0.343-0.132,0.817-0.18,1.425-0.148
+			c0.283,0.027,0.526,0.049,0.728,0.07c0.202,0.017,0.385,0.021,0.546,0.008c0.161-0.01,0.302-0.051,0.427-0.109
+			c0.323-0.157,0.603-0.475,0.838-0.958c0.301-0.619,0.405-1.076,0.298-1.372c-0.044-0.201-0.171-0.38-0.376-0.532
+			c-0.205-0.149-0.526-0.332-0.96-0.545c-0.493-0.223-0.867-0.362-1.116-0.432c-0.248-0.064-0.463-0.058-0.646,0.027
+			c-0.196,0.113-0.413,0.37-0.653,0.776c-0.003,0.058-0.03,0.135-0.079,0.237l-0.219,0.446l-1.892-0.924
+			c0.427-0.873,0.828-1.501,1.199-1.883c0.376-0.385,0.768-0.598,1.181-0.641c0.476-0.053,0.952,0,1.426,0.156
+			c0.474,0.16,1.037,0.4,1.691,0.716c1.456,0.715,2.291,1.462,2.508,2.245c0.189,0.686,0.023,1.577-0.511,2.669
+			c-0.37,0.753-0.732,1.26-1.091,1.516c-0.357,0.254-0.779,0.401-1.265,0.433c-0.158,0.013-0.414,0.008-0.772-0.022
+			c-0.357-0.029-0.623-0.044-0.801-0.049c-0.179-0.006-0.365,0.026-0.558,0.082c-0.234,0.034-0.4,0.123-0.496,0.256
+			C17.54,8.115,17.392,8.371,17.189,8.778z M14.562,9.358l1.893,0.924l-0.999,2.042l-1.893-0.926L14.562,9.358z"/>
+    </symbol>
+    <symbol id='education-software' viewBox="0 0 41.218 40.161">
+        <g>
+            <path d="M0.88,11.831c1.214-0.71,2.359-1.382,3.506-2.051c5.493-3.204,10.99-6.402,16.475-9.62
+		c0.366-0.215,0.619-0.206,0.985-0.013c6.327,3.351,12.662,6.686,18.996,10.026c0.112,0.059,0.22,0.127,0.377,0.217
+		c-1.136,0.629-2.222,1.23-3.308,1.832c-5.395,2.988-10.792,5.974-16.181,8.974c-0.296,0.165-0.516,0.151-0.804,0.016
+		c-5.793-2.717-11.59-5.425-17.386-8.134c-0.181-0.085-0.366-0.161-0.631-0.277c0,0.414,0,0.758,0,1.103
+		c0,0.878,0.004,1.756-0.002,2.634c-0.002,0.222,0.042,0.358,0.279,0.47c0.915,0.433,1.184,1.51,0.654,2.385
+		c-0.116,0.192-0.192,0.455-0.174,0.677c0.367,4.503,0.75,9.004,1.129,13.505c0.176,2.083,0.351,4.166,0.525,6.249
+		c0.007,0.084,0.001,0.169,0.001,0.337c-1.77,0-3.519,0-5.321,0c0.028-0.423,0.055-0.913,0.095-1.401
+		c0.31-3.803,0.623-7.606,0.934-11.409c0.204-2.506,0.407-5.012,0.601-7.519c0.01-0.13-0.05-0.283-0.119-0.4
+		c-0.569-0.958-0.306-1.93,0.655-2.457c0.108-0.059,0.216-0.233,0.217-0.355c0.016-1.258,0.02-2.517-0.004-3.775
+		c-0.003-0.153-0.161-0.358-0.305-0.441C1.713,12.192,1.32,12.037,0.88,11.831z"/>
+            <path d="M31.211,16.991c0.969,1.523,1.925,3.024,2.9,4.555c-0.153,0.109-0.278,0.205-0.41,0.291
+		c-3.923,2.579-7.845,5.159-11.775,7.727c-0.123,0.08-0.37,0.113-0.483,0.044c-4.272-2.599-8.536-5.212-12.8-7.824
+		c-0.037-0.023-0.069-0.053-0.152-0.118c0.847-1.303,1.695-2.609,2.569-3.954c0.498,0.227,0.985,0.447,1.471,0.672
+		c2.81,1.304,5.62,2.606,8.425,3.921c0.283,0.133,0.493,0.123,0.765-0.029c3.02-1.698,6.047-3.382,9.073-5.07
+		C30.92,17.136,31.05,17.074,31.211,16.991z"/>
+        </g>
+    </symbol>
+    <symbol id='elearning-business' viewBox="0 0 39.231 38.921">
+        <g>
+            <path d="M33.934,23.006c0.032,0,0.064,0,0.104-0.008c0.448-0.048,0.776-0.448,0.736-0.904c-0.048-0.456-0.448-0.784-0.904-0.736
+				c-0.456,0.048-0.784,0.448-0.736,0.904C33.174,22.686,33.526,22.998,33.934,23.006z"/>
+            <path d="M28.765,12.5c0.264-0.368,0.192-0.88-0.176-1.152c-0.368-0.264-0.88-0.184-1.152,0.176
+				c-0.264,0.368-0.184,0.88,0.176,1.152c0.144,0.104,0.304,0.152,0.472,0.16C28.341,12.844,28.597,12.724,28.765,12.5z"/>
+            <path d="M10.666,11.323c-0.368,0.264-0.448,0.784-0.184,1.152c0.16,0.216,0.4,0.336,0.656,0.344c0.168,0,0.344-0.048,0.496-0.152
+				c0.368-0.264,0.448-0.784,0.184-1.152C11.546,11.139,11.034,11.059,10.666,11.323z"/>
+            <path d="M25.125,36.104L25.125,36.104c-0.416,0.184-0.6,0.672-0.416,1.088c0.136,0.304,0.424,0.48,0.736,0.488
+				c0.12,0,0.232-0.024,0.352-0.072c0.416-0.184,0.6-0.672,0.416-1.088C26.029,36.104,25.541,35.92,25.125,36.104z"/>
+            <path d="M6.713,17.149c0.128,0.072,0.264,0.112,0.4,0.112c0.288,0.008,0.568-0.144,0.728-0.408
+				c0.224-0.392,0.096-0.896-0.296-1.12c-0.392-0.232-0.896-0.096-1.12,0.296C6.185,16.412,6.321,16.917,6.713,17.149z"/>
+            <path d="M19.596,37.272c-0.456,0-0.824,0.368-0.824,0.824c0,0.448,0.36,0.816,0.808,0.824c0.008,0,0.008,0,0.016,0
+				c0.456,0,0.824-0.368,0.824-0.824S20.052,37.272,19.596,37.272z"/>
+            <path d="M32.094,17.301c0.144,0,0.288-0.032,0.424-0.112c0.392-0.224,0.528-0.728,0.304-1.12
+				c-0.224-0.392-0.728-0.528-1.12-0.304c-0.392,0.224-0.528,0.728-0.304,1.12C31.542,17.149,31.814,17.293,32.094,17.301z"/>
+            <path d="M5.177,22.982c0.024,0,0.048,0.008,0.072,0.008c0.424,0.008,0.784-0.312,0.832-0.736v-0.008c0-0.008,0-0.008,0-0.016
+				c0.048-0.456-0.28-0.856-0.728-0.904c-0.456-0.048-0.856,0.28-0.904,0.728l0,0l0,0c0,0.008,0,0.008,0,0.016v0.008
+				C4.393,22.526,4.721,22.934,5.177,22.982z"/>
+            <path d="M14.067,36.096c-0.416-0.184-0.904,0-1.088,0.416s0,0.904,0.416,1.088c0.104,0.048,0.216,0.072,0.32,0.072
+				c0.32,0.008,0.624-0.176,0.768-0.488C14.667,36.768,14.475,36.28,14.067,36.096z"/>
+            <path d="M9.274,33.136c-1.304-0.496-2.088-1.008-2.088-1.008l-1,3.177l-0.136,0.432l-0.448-1.272
+				c1.032-1.44-0.08-1.512-0.272-1.512l0,0l0,0l0,0l0,0l0,0l0,0c-0.192,0-1.304,0.072-0.272,1.512l-0.448,1.272l-0.136-0.432
+				l-1.008-3.177c0,0-0.784,0.512-2.088,1.008c-1.44,0.52-1.344,1.704-1.376,3.921h5.321h0.016h5.321
+				C10.618,34.84,10.706,33.656,9.274,33.136z"/>
+            <path d="M3.057,30.111c0.112,0.744,0.688,1.696,1.64,2.032c0.384,0.136,0.816,0.136,1.2,0c0.928-0.336,1.528-1.28,1.64-2.024
+				c0.128-0.008,0.288-0.184,0.464-0.816c0.24-0.856-0.016-0.984-0.232-0.968c0.04-0.12,0.072-0.24,0.096-0.352
+				c0.368-2.224-0.728-2.304-0.728-2.304s-0.176-0.352-0.656-0.616c-0.32-0.192-0.768-0.336-1.352-0.288
+				c-0.192,0.008-0.368,0.048-0.536,0.104l0,0c-0.216,0.072-0.416,0.176-0.592,0.304c-0.224,0.136-0.424,0.312-0.608,0.504
+				c-0.288,0.296-0.552,0.68-0.664,1.16c-0.096,0.36-0.072,0.728,0.008,1.128l0,0c0.024,0.12,0.056,0.232,0.096,0.352
+				c-0.216-0.024-0.48,0.104-0.232,0.968C2.769,29.927,2.937,30.103,3.057,30.111z"/>
+            <path d="M37.847,33.136c-1.304-0.496-2.088-1.008-2.088-1.008l-1,3.177l-0.136,0.432l-0.448-1.272
+				c1.032-1.44-0.08-1.512-0.272-1.512l0,0l0,0l0,0l0,0l0,0l0,0c-0.192,0-1.304,0.072-0.272,1.512l-0.448,1.272l-0.136-0.432
+				l-1.008-3.177c0,0-0.784,0.512-2.088,1.008c-1.44,0.52-1.344,1.704-1.376,3.921h5.321h0.016h5.321
+				C39.191,34.84,39.279,33.656,37.847,33.136z"/>
+            <path d="M31.63,30.111c0.112,0.744,0.688,1.696,1.64,2.032c0.384,0.136,0.816,0.136,1.2,0c0.928-0.336,1.528-1.28,1.64-2.024
+				c0.128-0.008,0.288-0.184,0.464-0.816c0.24-0.856-0.016-0.984-0.232-0.968c0.04-0.12,0.072-0.24,0.096-0.352
+				c0.368-2.224-0.728-2.304-0.728-2.304s-0.184-0.352-0.656-0.616c-0.32-0.192-0.768-0.336-1.352-0.288
+				c-0.192,0.008-0.368,0.048-0.536,0.104l0,0c-0.216,0.072-0.416,0.176-0.592,0.304c-0.224,0.136-0.424,0.312-0.608,0.504
+				c-0.288,0.296-0.552,0.68-0.664,1.16c-0.096,0.36-0.072,0.728,0.008,1.128l0,0c0.024,0.12,0.056,0.232,0.096,0.352
+				c-0.216-0.024-0.48,0.104-0.232,0.968C31.342,29.927,31.502,30.103,31.63,30.111z"/>
+            <path d="M19.612,12.292h5.321c-0.032-2.216,0.064-3.401-1.376-3.921c-1.304-0.496-2.088-1.008-2.088-1.008l-1.008,3.177
+				l-0.136,0.432l-0.448-1.272c1.032-1.44-0.08-1.512-0.272-1.512l0,0l0,0l0,0l0,0l0,0l0,0c-0.192,0-1.304,0.072-0.272,1.512
+				l-0.448,1.272l-0.136-0.432l-1.008-3.177c0,0-0.784,0.512-2.088,1.008c-1.44,0.52-1.344,1.704-1.376,3.921h5.329L19.612,12.292
+				L19.612,12.292z"/>
+            <path d="M17.347,5.346c0.112,0.744,0.688,1.696,1.64,2.032c0.384,0.136,0.816,0.136,1.2,0c0.928-0.336,1.528-1.28,1.64-2.024
+				c0.128-0.008,0.288-0.184,0.464-0.816c0.24-0.856-0.016-0.984-0.232-0.968c0.04-0.12,0.072-0.24,0.096-0.352
+				c0.368-2.224-0.728-2.304-0.728-2.304s-0.184-0.352-0.656-0.616c-0.32-0.192-0.768-0.336-1.352-0.288
+				c-0.192,0.008-0.368,0.048-0.536,0.104l0,0c-0.216,0.072-0.416,0.176-0.592,0.304c-0.224,0.136-0.424,0.312-0.608,0.504
+				c-0.288,0.296-0.552,0.68-0.664,1.16c-0.096,0.36-0.072,0.728,0.008,1.128l0,0c0.024,0.12,0.056,0.232,0.096,0.352
+				c-0.216-0.024-0.48,0.104-0.232,0.968C17.059,5.162,17.219,5.338,17.347,5.346z"/>
+            <path d="M19.604,17.573c-3.633,0-6.577,2.945-6.577,6.577s2.945,6.577,6.577,6.577s6.577-2.945,6.577-6.577
+				C26.189,20.517,23.244,17.573,19.604,17.573z M21.5,26.75c-0.288,0.352-0.664,0.584-1.096,0.704
+				c-0.192,0.056-0.272,0.152-0.264,0.352c0.008,0.192,0,0.392,0,0.584c0,0.176-0.088,0.264-0.256,0.272
+				c-0.208,0.008-0.416,0.008-0.624,0c-0.184,0-0.272-0.104-0.272-0.288c0-0.144,0-0.28,0-0.424c0-0.312-0.016-0.328-0.312-0.376
+				c-0.384-0.064-0.76-0.152-1.12-0.32c-0.28-0.136-0.304-0.2-0.224-0.496c0.056-0.216,0.12-0.432,0.184-0.648
+				c0.08-0.248,0.144-0.28,0.376-0.16c0.392,0.2,0.808,0.32,1.24,0.368c0.28,0.032,0.552,0.008,0.816-0.104
+				c0.48-0.208,0.56-0.776,0.152-1.112c-0.136-0.112-0.296-0.2-0.464-0.272c-0.424-0.184-0.864-0.328-1.264-0.568
+				c-0.648-0.392-1.064-0.92-1.016-1.712c0.056-0.896,0.56-1.448,1.376-1.752c0.336-0.12,0.336-0.12,0.344-0.472
+				c0-0.12,0-0.24,0-0.36c0.008-0.264,0.056-0.312,0.32-0.32c0.08,0,0.168,0,0.248,0c0.568,0,0.568,0,0.568,0.568
+				c0,0.4,0,0.4,0.4,0.464c0.304,0.048,0.592,0.136,0.88,0.264c0.152,0.072,0.216,0.176,0.168,0.344
+				c-0.072,0.24-0.136,0.488-0.216,0.728c-0.072,0.232-0.144,0.264-0.368,0.152c-0.44-0.216-0.904-0.304-1.392-0.272
+				c-0.128,0.008-0.256,0.024-0.368,0.072c-0.424,0.184-0.488,0.648-0.128,0.936c0.184,0.144,0.392,0.248,0.6,0.336
+				c0.376,0.152,0.752,0.304,1.104,0.496C21.988,24.366,22.292,25.782,21.5,26.75z"/>
+        </g>
+    </symbol>
+</svg>
+<div class="wrapper">
+    <div class="header">
+        <header class="header__wrapper">
+            <a href="#" class="header__logo">RaccoonGang</a>
+            <ul class="header-nav">
+                <li class="header-nav__item"><a href="#" class="header-nav__link">ABOUT US</a></li>
+                <li class="header-nav__item"><a href="#" class="header-nav__link">OPEN edX SERVICES</a></li>
+                <li class="header-nav__item"><a href="" class="header-nav__link">SOLUTIONS</a></li>
+                <li class="header-nav__item"><a href="" class="header-nav__link">RACCOON UNIVERSITY</a></li>
+                <li class="header-nav__item"><a href="" class="header-nav__link">PRICING</a></li>
+                <li class="header-nav__item"><a href="" class="header-nav__link">BLOG</a></li>
+                <li class="header-nav__item"><a href="" class="header-nav__link">CONTACT US</a></li>
             </ul>
+            <a href="#" class="button">Request Demo</a>
+        </header>
+    </div>
+    <div class="main-banner">
+        <div class="main-banner__wrapper">
+            <h1 class="main-banner__header">Online learning <span class="main-banner__header--green">done right!</span>
+            </h1>
+            <p class="main-banner__paragraph">We deliver flexible online learning solutions using Open edX</p>
+            <p class="main-banner__paragraph main-banner__paragraph--small">Try our learning management system and
+                deliver online learning using the top-notch learning technology</p>
+            <a href="#" class="button">Request Demo</a>
         </div>
     </div>
-    <script>
-        $(document).ready(function(){
-            $('.bxslider').bxSlider({
-                minSlides: 2,
-                maxSlides: 7,
-                slideWidth: 140,
-                slideMargin: 10,
-                pager: false,
-                controls: true
+    <div class="partners">
+        <ul class="partners__list bxslider">
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/microsft.png" alt="Microsoft"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/edx.png" alt="EDX"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/prometheus.png"
+                                                                              alt="Prometheus"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/shindig.png" alt="Shindig"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/ucla.png" alt="UCLA"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/goit.png" alt="GoIT"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/labster.png" alt="Labster"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/microsft.png" alt="Microsoft"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/edx.png" alt="EDX"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/prometheus.png"
+                                                                              alt="Prometheus"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/shindig.png" alt="Shindig"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/ucla.png" alt="UCLA"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/goit.png" alt="GoIT"
+                                                                              class="partners__image"></a></li>
+            <li class="partners__item"><a href="" class="partners__link"><img src="images/labster.png" alt="Labster"
+                                                                              class="partners__image"></a></li>
+        </ul>
+    </div>
+    <div class="facts">
+        <ul class="facts__list">
+            <li class="facts__item facts__item--installations">
+                <div class="facts__title facts__title--wrapper">
+                    <span class="facts__title count">50</span><span class="facts__title">+</span>
+                </div>
+                <span class="facts__header">Installations</span>
+                <p class="facts__paragraph">50+ INSTALLATIONS - Custom-branded and configured online learni</p>
+            </li>
+            <li class="facts__item facts__item--courses">
+                <div class="facts__title facts__title--wrapper">
+                    <span class="facts__title count">360</span><span class="facts__title">+</span>
+                </div>
+                <span class="facts__header">Courses</span>
+                <p class="facts__paragraph">360+ courses being taught on these online learning platforms</p>
+            </li>
+            <li class="facts__item facts__item--sudents">
+                <div class="facts__title facts__title--wrapper">
+                    <span class="facts__title count">700K</span><span class="facts__title">K+</span>
+                </div>
+                <span class="facts__header">Sudents</span>
+                <p class="facts__paragraph">600,000+ learners enrolled on courses delivered via our elearni</p>
+            </li>
+        </ul>
+    </div>
+    <div class="solutions">
+        <div class="solutions__wrapper">
+            <h2 class="solutions__title">Our Solutions</h2>
+            <ul class="solutions__list">
+                <li class="solutions__item">
+                    <a href="" class="solutions__link">
+                        <div class="solutions__image solutions__image--wrapper">
+                            <img src="images/employee_training.png" alt="Employee training" class="solutions__image">
+                        </div>
+                        <span class="solutions__text">LMS for Online Employee Training</span>
+                    </a>
+                </li>
+                <li class="solutions__item">
+                    <a href="" class="solutions__link">
+                        <div class="solutions__image solutions__image--wrapper">
+                            <svg class="solutions__image">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#education-software"></use>
+                            </svg>
+                        </div>
+                        <span class="solutions__text">Higher Education Software</span>
+                    </a>
+                </li>
+                <li class="solutions__item">
+                    <a href="" class="solutions__link">
+                        <div class="solutions__image solutions__image--wrapper">
+                            <svg class="solutions__image">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#customer-onboard"></use>
+                            </svg>
+                        </div>
+                        <span class="solutions__text">LMS for Customer Onboarding</span>
+                    </a>
+                </li>
+                <li class="solutions__item">
+                    <a href="" class="solutions__link">
+                        <div class="solutions__image solutions__image--wrapper">
+                            <svg class="solutions__image">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#elearning-business"></use>
+                            </svg>
+                        </div>
+                        <span class="solutions__text">LMS for Elearning Business</span>
+                    </a>
+                </li>
+                <li class="solutions__item">
+                    <a href="" class="solutions__link">
+                        <div class="solutions__image solutions__image--wrapper">
+                            <img src="images/K12.png" alt="" class="solutions__image">
+                        </div>
+                        <span class="solutions__text">K-12 online learning</span>
+                    </a>
+                </li>
+                <li class="solutions__item">
+                    <a href="" class="solutions__link">
+                        <div class="solutions__image solutions__image--wrapper">
+                            <img src="images/for_non_profits.png" alt="" class="solutions__image">
+                        </div>
+                        <span class="solutions__text">LMS for non-profits</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.bxslider').bxSlider({
+            minSlides: 2,
+            maxSlides: 7,
+            slideWidth: 140,
+            slideMargin: 5,
+            pager: false,
+            controls: true
+        });
+        $('.count').each(function () {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 800,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
             });
         });
-    </script>
+    });
+</script>
 </body>
 </html>
