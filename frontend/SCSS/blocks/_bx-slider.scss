@@ -1,0 +1,17 @@
+
+.bx-wrapper .bx-controls-direction a {
+    width: 13px;
+    height: 20px;
+}
+.bx-wrapper .bx-prev {
+    background: url(../images/arrow.png) no-repeat;
+    transform: rotate(180deg);
+}
+.bx-wrapper .bx-next {
+    background: url(../images/arrow.png) no-repeat;
+}
+.bx-wrapper .bx-viewport {
+    border: 0;
+    box-shadow: none;
+    background: #ebebeb;
+}
