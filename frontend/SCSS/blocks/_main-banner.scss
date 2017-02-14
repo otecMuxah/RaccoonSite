@@ -5,9 +5,12 @@
     position: relative;
     top: -80px;
     color: $color-white;
-    padding: 160px 0;
+    padding: 160px 0 158px;
     margin-bottom: -80px;
-
+    &--nomargins {
+        top: 0;
+        margin-bottom: 0;
+    }
     &__wrapper {
         width: 1140px;
         margin: 0 auto;

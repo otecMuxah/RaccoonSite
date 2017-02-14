@@ -13,7 +13,7 @@
             position: absolute;
             bottom: -5px;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateX(-50%) translateZ(0);
             height: 3px;
             width: 0;
             background: $color-green;
@@ -23,5 +23,9 @@
             width: 100%;
             transition: all 0.2s linear;
         }
+        .header--fixed & {
+            color: $color-black;
+        }
     }
+
 }

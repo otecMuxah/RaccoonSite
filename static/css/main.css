@@ -129,6 +129,18 @@ body {
     height: 50px;
     display: block;
     font-size: 0; }
+    .header--fixed .header__logo {
+      display: none; }
+  .header__logo-super {
+    display: none;
+    width: 80px;
+    height: 80px; }
+    .header--fixed .header__logo-super {
+      display: block; }
+  .header--fixed {
+    position: fixed;
+    background: #fff;
+    color: #222; }
 
 .button {
   text-transform: uppercase;
@@ -156,8 +168,8 @@ body {
       position: absolute;
       bottom: -5px;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
+      -webkit-transform: translateX(-50%) translateZ(0);
+              transform: translateX(-50%) translateZ(0);
       height: 3px;
       width: 0;
       background: #85d72e;
@@ -167,6 +179,8 @@ body {
       width: 100%;
       -webkit-transition: all 0.2s linear;
       transition: all 0.2s linear; }
+    .header--fixed .header-nav__link {
+      color: #222; }
 
 .main-banner {
   width: 100%;
@@ -175,8 +189,11 @@ body {
   position: relative;
   top: -80px;
   color: #fff;
-  padding: 160px 0;
+  padding: 160px 0 158px;
   margin-bottom: -80px; }
+  .main-banner--nomargins {
+    top: 0;
+    margin-bottom: 0; }
   .main-banner__wrapper {
     width: 1140px;
     margin: 0 auto;
@@ -227,8 +244,9 @@ body {
 
 .partners {
   background: #ebebeb;
-  padding: 20px 0;
-  width: 100%; }
+  padding: 25px 0;
+  width: 100%;
+  margin-bottom: 65px; }
   .partners__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -278,66 +296,69 @@ body {
 .bx-wrapper .bx-next:hover {
   background-position: 0 0; }
 
-.facts__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  width: 1140px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  z-index: 1; }
-  .facts__list:after {
-    content: '';
-    width: 70%;
-    height: 1px;
-    background: #85d72e;
-    position: absolute;
-    z-index: 0;
-    top: 27%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-
-.facts__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  max-width: 360px; }
-
-.facts__title {
-  font: 700 72px/96px phenomenaregular, Arial, sans-serif; }
-  .facts__item--installations .facts__title {
-    color: #85d72e; }
-  .facts__item--courses .facts__title {
-    color: #64ab6e; }
-  .facts__item--sudents .facts__title {
-    color: #778fcf; }
-  .facts__title--wrapper {
-    background: #fff;
-    z-index: 1;
-    padding: 0 20px; }
-
-.facts__header {
-  font: 22px/27px phenomenabold, Arial, sans-serif;
-  color: #222;
-  text-transform: uppercase; }
-
-.facts__paragraph {
-  font: 16px/21px roboto-light, Arial, sans-serif; }
+.facts {
+  margin-bottom: 68px; }
+  .facts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 1140px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    z-index: 1; }
+    .facts__list:after {
+      content: '';
+      width: 70%;
+      height: 1px;
+      background: #85d72e;
+      position: absolute;
+      z-index: 0;
+      top: 27%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .facts__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    max-width: 360px;
+    margin-left: 33px; }
+  .facts__title {
+    font: 700 72px/96px phenomenaregular, Arial, sans-serif; }
+    .facts__item--installations .facts__title {
+      color: #85d72e; }
+    .facts__item--courses .facts__title {
+      color: #64ab6e; }
+    .facts__item--sudents .facts__title {
+      color: #778fcf; }
+    .facts__title--wrapper {
+      background: #fff;
+      z-index: 1;
+      padding: 0 20px;
+      margin-bottom: 10px; }
+  .facts__header {
+    font: 22px/27px phenomenabold, Arial, sans-serif;
+    color: #222;
+    text-transform: uppercase;
+    margin: 0 0 10px -30px; }
+  .facts__paragraph {
+    font: 16px/21px roboto-light, Arial, sans-serif;
+    margin-left: -33px; }
 
 .solutions {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 78px; }
   .solutions__wrapper {
     width: 1140px;
     margin: 0 auto;
@@ -358,9 +379,22 @@ body {
     width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    position: relative;
+    padding-left: 18px;
+    box-sizing: border-box;
+    margin-right: -3px; }
     .solutions__list:after {
-      content: ''; }
+      content: '';
+      position: absolute;
+      width: 90%;
+      height: 1px;
+      background: #778fcf;
+      z-index: 0;
+      top: 60px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
   .solutions__item {
     width: 135px;
     display: -webkit-box;
@@ -390,7 +424,11 @@ body {
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    z-index: 1;
+    margin-bottom: 32px; }
     .solutions__image--wrapper:after {
       content: '';
       position: absolute;
@@ -421,7 +459,9 @@ body {
   .solutions__title {
     font: 700 28px/35px phenomenabold, Arial, sans-serif;
     color: #222;
-    position: relative; }
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 36px; }
     .solutions__title:before, .solutions__title:after {
       content: '';
       position: absolute;
@@ -438,3 +478,275 @@ body {
     color: #222;
     text-align: center;
     display: inline-block; }
+
+.white-animate-1,
+.white-animate-2,
+.white-animate-3,
+.white-animate-4,
+.white-animate-5,
+.bottom-white-animate-1,
+.bottom-white-animate-2,
+.bottom-white-animate-3,
+.bottom-white-animate-4,
+.bottom-white-animate-5,
+.bottom-black-animate-1,
+.bottom-black-animate-2,
+.black-animate-1,
+.black-animate-2,
+.black-animate-3,
+.black-animate-4 {
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
+
+.white-animate-1 {
+  -webkit-animation-name: white-1;
+          animation-name: white-1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.white-animate-1:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #181a19; }
+
+.white-animate-2 {
+  -webkit-animation-name: white-1;
+          animation-name: white-1;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.white-animate-2:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #181a19; }
+
+.white-animate-3 {
+  -webkit-animation-name: white-1;
+          animation-name: white-1;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.white-animate-3:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #181a19; }
+
+.white-animate-4 {
+  -webkit-animation-name: white-1;
+          animation-name: white-1;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.white-animate-4:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #181a19; }
+
+.white-animate-5 {
+  -webkit-animation-name: white-1;
+          animation-name: white-1;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.white-animate-5:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #181a19; }
+
+.bottom-white-animate-1 {
+  -webkit-animation-name: white-1;
+          animation-name: white-1;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.bottom-white-animate-1:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #181a19; }
+
+.bottom-white-animate-2 {
+  -webkit-animation-name: white-1;
+          animation-name: white-1;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.bottom-white-animate-2:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #181a19; }
+
+.bottom-white-animate-3 {
+  -webkit-animation-name: white-1;
+          animation-name: white-1;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.bottom-white-animate-3:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #181a19; }
+
+.bottom-white-animate-4 {
+  -webkit-animation-name: white-1;
+          animation-name: white-1;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.bottom-white-animate-4:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #181a19; }
+
+.black-animate-1 {
+  -webkit-animation-name: black-1;
+          animation-name: black-1;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.black-animate-1:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #fff; }
+
+.black-animate-2 {
+  -webkit-animation-name: black-1;
+          animation-name: black-1;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.black-animate-2:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #fff; }
+
+.black-animate-3 {
+  -webkit-animation-name: black-1;
+          animation-name: black-1;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.black-animate-3:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #fff; }
+
+.black-animate-4 {
+  -webkit-animation-name: black-1;
+          animation-name: black-1;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.black-animate-4:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #fff; }
+
+.bottom-black-animate-1 {
+  -webkit-animation-name: black-1;
+          animation-name: black-1;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.bottom-black-animate-1:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #fff; }
+
+.bottom-black-animate-2 {
+  -webkit-animation-name: black-1;
+          animation-name: black-1;
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+  -webkit-transition: fill 2s;
+  transition: fill 2s; }
+
+.bottom-black-animate-2:hover {
+  -webkit-transition: fill .1s;
+  transition: fill .1s;
+  fill: #fff; }
+
+#raccoon-logo {
+  -webkit-transition: -webkit-filter 2s;
+  transition: -webkit-filter 2s;
+  transition: filter 2s;
+  transition: filter 2s, -webkit-filter 2s;
+  -webkit-animation-name: shadow;
+          animation-name: shadow;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px; }
+
+#raccoon-logo:hover {
+  -webkit-filter: drop-shadow(0px 0px 30px #fff);
+          filter: drop-shadow(0px 0px 30px #fff);
+  -webkit-transition: -webkit-filter 2s;
+  transition: -webkit-filter 2s;
+  transition: filter 2s;
+  transition: filter 2s, -webkit-filter 2s; }
+
+@-webkit-keyframes white-1 {
+  0%, 100% { }
+  50% {
+    fill: #181a19; } }
+
+@keyframes white-1 {
+  0%, 100% { }
+  50% {
+    fill: #181a19; } }
+
+@-webkit-keyframes black-1 {
+  0%, 100% { }
+  50% {
+    fill: #fff; } }
+
+@keyframes black-1 {
+  0%, 100% { }
+  50% {
+    fill: #fff; } }
+
+@-webkit-keyframes shadow {
+  0%, 100% { }
+  50% {
+    -webkit-filter: drop-shadow(0px 0px 30px #fff);
+            filter: drop-shadow(0px 0px 30px #fff); } }
+
+@keyframes shadow {
+  0%, 100% { }
+  50% {
+    -webkit-filter: drop-shadow(0px 0px 30px #fff);
+            filter: drop-shadow(0px 0px 30px #fff); } }

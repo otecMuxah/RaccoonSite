@@ -1,0 +1,192 @@
+$color-1: #181a19;
+$color-2: #fff;
+
+.white-animate-1,
+.white-animate-2,
+.white-animate-3,
+.white-animate-4,
+.white-animate-5,
+.bottom-white-animate-1,
+.bottom-white-animate-2,
+.bottom-white-animate-3,
+.bottom-white-animate-4,
+.bottom-white-animate-5,
+.bottom-black-animate-1,
+.bottom-black-animate-2,
+.black-animate-1,
+.black-animate-2,
+.black-animate-3,
+.black-animate-4{
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+}
+.white-animate-1 {
+    animation-name: white-1;
+    animation-delay: 1s;
+    transition: fill 2s;
+}
+.white-animate-1:hover {
+    transition: fill .1s;
+    fill: $color-1;
+}
+.white-animate-2 {
+    animation-name: white-1;
+    animation-delay: 1.1s;
+    transition: fill 2s;
+}
+.white-animate-2:hover {
+    transition: fill .1s;
+    fill: $color-1;
+}
+.white-animate-3 {
+    animation-name: white-1;
+    animation-delay: 1.2s;
+    transition: fill 2s;
+}
+.white-animate-3:hover {
+    transition: fill .1s;
+    fill: $color-1;
+}
+.white-animate-4 {
+    animation-name: white-1;
+    animation-delay: 1.3s;
+    transition: fill 2s;
+}
+.white-animate-4:hover {
+    transition: fill .1s;
+    fill: $color-1;
+}
+.white-animate-5 {
+    animation-name: white-1;
+    animation-delay: 1.4s;
+    transition: fill 2s;
+}
+.white-animate-5:hover {
+    transition: fill .1s;
+    fill: $color-1;
+}
+.bottom-white-animate-1 {
+    animation-name: white-1;
+    animation-delay: 1.9s;
+    transition: fill 2s;
+}
+.bottom-white-animate-1:hover {
+    transition: fill .1s;
+    fill: $color-1;
+}
+.bottom-white-animate-2 {
+    animation-name: white-1;
+    animation-delay: 2.1s;
+    transition: fill 2s;
+}
+.bottom-white-animate-2:hover {
+    transition: fill .1s;
+    fill: $color-1;
+}
+.bottom-white-animate-3 {
+    animation-name: white-1;
+    animation-delay: 2.3s;
+    transition: fill 2s;
+}
+.bottom-white-animate-3:hover {
+    transition: fill .1s;
+    fill: $color-1;
+}
+.bottom-white-animate-4 {
+    animation-name: white-1;
+    animation-delay: 2.5s;
+    transition: fill 2s;
+}
+.bottom-white-animate-4:hover{
+    transition: fill .1s;
+    fill: $color-1;
+}
+
+.black-animate-1 {
+    animation-name: black-1;
+    animation-delay: 1.8s;
+    transition: fill 2s;
+}
+.black-animate-1:hover {
+    transition: fill .1s;
+    fill: $color-2;
+}
+.black-animate-2 {
+    animation-name: black-1;
+    animation-delay: 1.7s;
+    transition: fill 2s;
+}
+.black-animate-2:hover {
+    transition: fill .1s;
+    fill: $color-2;
+}
+.black-animate-3 {
+    animation-name: black-1;
+    animation-delay: 1.6s;
+    transition: fill 2s;
+}
+.black-animate-3:hover {
+    transition: fill .1s;
+    fill: $color-2;
+}
+.black-animate-4 {
+    animation-name: black-1;
+    animation-delay: 1.5s;
+    transition: fill 2s;
+}
+.black-animate-4:hover {
+    transition: fill .1s;
+    fill: $color-2;
+}
+
+.bottom-black-animate-1 {
+    animation-name: black-1;
+    animation-delay: 2.8s;
+    transition: fill 2s;
+}
+.bottom-black-animate-1:hover {
+    transition: fill .1s;
+    fill: $color-2;
+}
+.bottom-black-animate-2 {
+    animation-name: black-1;
+    animation-delay: 2.7s;
+    transition: fill 2s;
+}
+.bottom-black-animate-2:hover {
+    transition: fill .1s;
+    fill: $color-2;
+}
+#raccoon-logo {
+    transition: filter 2s;
+    animation-name: shadow;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+}
+#raccoon-logo:hover {
+    filter: drop-shadow(0px 0px 30px #fff);
+    transition: filter 2s;
+}
+
+@keyframes white-1 {
+    0%, 100% {}
+    50% {
+        fill: $color-1;
+    }
+}
+@keyframes black-1 {
+    0%, 100% {}
+    50% {
+        fill: $color-2;
+    }
+}
+@keyframes shadow {
+    0%, 100% {}
+    50% {
+        filter: drop-shadow(0px 0px 30px #fff);
+    }
+}

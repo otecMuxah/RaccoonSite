@@ -20,5 +20,21 @@
         height: 50px;
         display: block;
         font-size: 0;
+        .header--fixed & {
+            display: none;
+        }
+    }
+    &__logo-super {
+        display: none;
+        width: 80px;
+        height: 80px;
+        .header--fixed & {
+            display: block;
+        }
+    }
+    &--fixed {
+        position: fixed;
+        background: $color-white;
+        color: $color-black;
     }
 }

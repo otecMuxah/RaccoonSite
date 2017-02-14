@@ -1,5 +1,6 @@
 .solutions {
     width: 100%;
+    margin-bottom: 78px;
     &__wrapper {
         width: 1140px;
         margin: 0 auto;
@@ -11,9 +12,20 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        position: relative;
+        padding-left: 18px;
+        box-sizing: border-box;
+        margin-right: -3px;
         &:after {
             content: '';
-
+            position: absolute;
+            width: 90%;
+            height: 1px;
+            background: $color-dark-blue;
+            z-index: 0;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
     &__item {
@@ -34,6 +46,9 @@
             transition: all 0.3s linear;
             position: relative;
             overflow: hidden;
+            transform: translateZ(0);
+            z-index: 1;
+            margin-bottom: 32px;
             &:after {
                 content: '';
                 position: absolute;
@@ -66,6 +81,8 @@
         font: 700 28px/35px $font_ph_bold;
         color: $color-black;
         position: relative;
+        text-transform: uppercase;
+        margin-bottom: 36px;
         &:before,
         &:after {
             content: '';

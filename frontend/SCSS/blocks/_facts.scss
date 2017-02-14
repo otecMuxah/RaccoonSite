@@ -1,4 +1,5 @@
 .facts {
+    margin-bottom: 68px;
     &__list {
         display: flex;
         margin: 0 auto;
@@ -24,6 +25,7 @@
         align-items: center;
         text-align: center;
         max-width: 360px;
+        margin-left: 33px;
     }
     &__title {
         font: 700 72px/96px $font_ph;
@@ -40,14 +42,17 @@
             background: $color-white;
             z-index: 1;
             padding: 0 20px;
+            margin-bottom: 10px;
         }
     }
     &__header {
         font: 22px/27px $font_ph_bold;
         color: $color-black;
         text-transform: uppercase;
+        margin: 0 0 10px -30px;
     }
     &__paragraph {
         font: 16px/21px $font_light;
+        margin-left: -33px;
     }
 }
