@@ -884,10 +884,17 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .why-open-edx__image {
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-    visibility: visible; }
+    visibility: visible;
+    height: 60px;
+    fill: #c7c7c7; }
+    .why-open-edx__text-wrapper .why-open-edx__image {
+      fill: #fff;
+      width: 32px;
+      height: 29px;
+      margin-right: 14px;
+      margin-bottom: 12px; }
   .why-open-edx__item {
+    box-sizing: border-box;
     width: 360px;
     height: 150px;
     -ms-flex-negative: 0;
@@ -914,16 +921,25 @@ body {
               transform: translateX(99%);
       -webkit-transition: all 0.3s linear;
       transition: all 0.3s linear; }
-    .why-open-edx__item:hover .why-open-edx__text {
-      -webkit-animation-name: show-text;
-              animation-name: show-text;
-      -webkit-animation-delay: 0.3s;
-              animation-delay: 0.3s;
-      -webkit-animation-duration: 0.3s;
-              animation-duration: 0.3s;
-      -webkit-animation-iteration-count: 1;
-              animation-iteration-count: 1; }
+    .why-open-edx__item:hover .why-open-edx__text-wrapper {
+      color: #222;
+      -webkit-transition: color 0.3s linear 0.3s;
+      transition: color 0.3s linear 0.3s; }
+      .why-open-edx__item:hover .why-open-edx__text-wrapper .why-open-edx__image {
+        fill: #72bb25;
+        -webkit-transition: fill 0.3s linear 0.3s;
+        transition: fill 0.3s linear 0.3s; }
+      .why-open-edx__item:hover .why-open-edx__text-wrapper .why-open-edx__name {
+        color: #222;
+        -webkit-transition: color 0.3s linear 0.3s;
+        transition: color 0.3s linear 0.3s; }
+    .why-open-edx__item:hover .why-open-edx__image {
+      fill: #222;
+      -webkit-transition: fill 0.3s linear 0.3s;
+      transition: fill 0.3s linear 0.3s; }
   .why-open-edx__item-wrapper {
+    box-sizing: border-box;
+    padding: 15px 0 21px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -935,14 +951,16 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
     height: 100%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
-    z-index: 1; }
+    z-index: 1;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
     .why-open-edx__item-wrapper:before {
       content: '';
       position: absolute;
@@ -952,7 +970,7 @@ body {
       width: 4px;
       background: #72bb25;
       z-index: 1; }
-  .why-open-edx__text {
+  .why-open-edx__text-wrapper {
     position: absolute;
     box-sizing: border-box;
     width: 100%;
@@ -960,25 +978,29 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
     color: #fff;
-    z-index: 0; }
+    z-index: 0;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    padding: 14px 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .why-open-edx__text {
+    font: 14px roboto-light, Arial, sans-serif;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
   .why-open-edx__name {
     font: 700 22px/27px phenomenaregular, Arial, sans-serif;
     text-transform: uppercase;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
     visibility: visible; }
-
-@-webkit-keyframes show-text {
-  0% {
-    color: #fff; }
-  100% {
-    color: #222; } }
-
-@keyframes show-text {
-  0% {
-    color: #fff; }
-  100% {
-    color: #222; } }
+    .why-open-edx__text-wrapper .why-open-edx__name {
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #fff;
+      margin-bottom: 12px; }
