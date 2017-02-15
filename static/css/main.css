@@ -474,11 +474,13 @@ body {
       transition: all 0.3s linear;
       -webkit-transform: translate3d(-50%, -50%, 0);
               transform: translate3d(-50%, -50%, 0); }
-    .solutions__link:hover svg {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
+    .solutions__link:hover .solutions__image svg {
+      width: 66px;
+      height: 66px;
       -webkit-transition: all 0.3s linear;
       transition: all 0.3s linear; }
+      .solutions__link:hover .solutions__image svg--k12 {
+        height: 33px; }
     .solutions__link:hover img {
       -webkit-transform: scale(1.1);
               transform: scale(1.1);
@@ -486,7 +488,9 @@ body {
       transition: all 0.3s linear; }
   .solutions__image {
     -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
+    transition: all 0.3s linear;
+    height: 60px;
+    fill: #fff; }
     .solutions__image--wrapper {
       width: 120px;
       height: 120px;
@@ -522,12 +526,8 @@ body {
         -webkit-transition: all 0.3s linear;
         transition: all 0.3s linear;
         background: rgba(0, 0, 0, 0.8) url(../images/zoom-tool.png) no-repeat 50% 25%; }
-    .solutions__image svg {
-      width: 60px;
-      height: 60px;
-      fill: #fff;
-      -webkit-transition: all 0.3s linear;
-      transition: all 0.3s linear; }
+    .solutions__image--k12 {
+      height: 30px; }
   .solutions__title {
     font: 700 28px/35px phenomenabold, Arial, sans-serif;
     color: #222;

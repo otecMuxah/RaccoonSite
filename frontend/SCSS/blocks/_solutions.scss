@@ -57,9 +57,13 @@
                     transform: translate3d(-50%,-50%,0);
                 }
             }
-            svg {
-                transform: scale(1.1);
+            .solutions__image svg {
+                width: 66px;
+                height: 66px;
                 transition: all 0.3s linear;
+                &--k12 {
+                    height: 33px;
+                }
             }
             img {
                 transform: scale(1.1);
@@ -69,6 +73,8 @@
     }
     &__image {
         transition: all 0.3s linear;
+        height: 60px;
+        fill: $color-white;
         &--wrapper {
             width: 120px;
             height: 120px;
@@ -95,21 +101,9 @@
                 transition: all 0.3s linear;
                 background: rgba(0,0,0,0.8) url(../images/zoom-tool.png) no-repeat 50% 25%;
             }
-            //&:hover {
-            //    transform: scale(1.1);
-            //    transition: all 0.3s linear;
-            //}
-            //&:hover:after {
-            //    transition: all 0.3s linear;
-            //    transform: translate3d(-50%,-50%,0);
-            //}
-
         }
-        svg {
-            width: 60px;
-            height: 60px;
-            fill: $color-white;
-            transition: all 0.3s linear;
+        &--k12 {
+            height: 30px;
         }
     }
     &__title {
