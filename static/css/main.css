@@ -907,27 +907,63 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 20px; }
-    .why-open-edx__item:hover .why-open-edx__text {
+    margin-bottom: 20px;
+    overflow: hidden; }
+    .why-open-edx__item:hover .why-open-edx__item-wrapper {
+      -webkit-transform: translateX(99%);
+              transform: translateX(99%);
       -webkit-transition: all 0.3s linear;
-      transition: all 0.3s linear;
-      width: 100%; }
-    .why-open-edx__item:hover .why-open-edx__image,
-    .why-open-edx__item:hover .why-open-edx__name {
-      visibility: hidden;
-      -webkit-transition: all 0.1s linear;
-      transition: all 0.1s linear; }
+      transition: all 0.3s linear; }
+    .why-open-edx__item:hover .why-open-edx__text {
+      -webkit-animation-name: show-text;
+              animation-name: show-text;
+      -webkit-animation-delay: 0.3s;
+              animation-delay: 0.3s;
+      -webkit-animation-duration: 0.3s;
+              animation-duration: 0.3s;
+      -webkit-animation-iteration-count: 1;
+              animation-iteration-count: 1; }
+  .why-open-edx__item-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    z-index: 1; }
+    .why-open-edx__item-wrapper:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 4px;
+      background: #72bb25;
+      z-index: 1; }
   .why-open-edx__text {
     position: absolute;
     box-sizing: border-box;
-    width: 0;
+    width: 100%;
     overflow: hidden;
-    border: 2px solid #72bb25;
     top: 0;
     left: 0;
     height: 100%;
     -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
+    transition: all 0.3s linear;
+    color: #fff;
+    z-index: 0; }
   .why-open-edx__name {
     font: 700 22px/27px phenomenaregular, Arial, sans-serif;
     text-transform: uppercase;
@@ -936,19 +972,13 @@ body {
     visibility: visible; }
 
 @-webkit-keyframes show-text {
-  0% {
-    width: 0; }
-  50% {
-    width: 100%; }
-  100% {
-    width: 100%;
-    visibility: visible; } }
+  from {
+    color: #fff; }
+  to {
+    color: #222; } }
 
 @keyframes show-text {
-  0% {
-    width: 0; }
-  50% {
-    width: 100%; }
-  100% {
-    width: 100%;
-    visibility: visible; } }
+  from {
+    color: #fff; }
+  to {
+    color: #222; } }
