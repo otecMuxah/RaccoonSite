@@ -84,10 +84,10 @@
 }
 
 @keyframes show-text {
-    from {
+    0% {
         color: $color-white;
     }
-    to {
+    100% {
         color: $color-black;
     }
 }

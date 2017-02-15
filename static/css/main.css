@@ -972,13 +972,13 @@ body {
     visibility: visible; }
 
 @-webkit-keyframes show-text {
-  from {
+  0% {
     color: #fff; }
-  to {
+  100% {
     color: #222; } }
 
 @keyframes show-text {
-  from {
+  0% {
     color: #fff; }
-  to {
+  100% {
     color: #222; } }
