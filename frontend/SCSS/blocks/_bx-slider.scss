@@ -5,6 +5,7 @@
     top: 38%;
     text-indent: 0;
     font-size: 0;
+    z-index: 2;
 }
 .bx-wrapper .bx-prev {
     background: url(../images/arrow.png) no-repeat;
@@ -29,4 +30,15 @@
 }
 .bx-wrapper .bx-next:hover {
     background-position: 0 0;
+}
+@include width-1140 {
+    .bx-wrapper .bx-next {
+        right: 3px;
+    }
+    .bx-wrapper .bx-prev {
+        left: 3px;
+    }
+    .bx-wrapper {
+        padding: 0 25px;
+    }
 }

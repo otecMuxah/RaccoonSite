@@ -2,7 +2,7 @@
     width: 100%;
     margin-bottom: 78px;
     &__wrapper {
-        width: 1140px;
+        max-width: 1140px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -27,14 +27,48 @@
             left: 50%;
             transform: translateX(-50%);
         }
+        @include tablet {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 10px;
+            &:after {
+                display: none;
+            }
+        }
     }
     &__item {
-        width: 135px;
+        width: 170px;
         display: flex;
         align-items: center;
         flex-direction: column;
+        @include tablet {
+            margin-bottom: 40px;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &:hover {
+            .solutions__image--wrapper {
+                &:after {
+                    transition: all 0.3s linear;
+                    transform: translate3d(-50%,-50%,0);
+                }
+            }
+            svg {
+                transform: scale(1.1);
+                transition: all 0.3s linear;
+            }
+            img {
+                transform: scale(1.1);
+                transition: all 0.3s linear;
+            }
+        }
     }
     &__image {
+        transition: all 0.3s linear;
         &--wrapper {
             width: 120px;
             height: 120px;
@@ -61,20 +95,21 @@
                 transition: all 0.3s linear;
                 background: rgba(0,0,0,0.8) url(../images/zoom-tool.png) no-repeat 50% 25%;
             }
-            &:hover {
-                transform: scale(1.1);
-                transition: all 0.3s linear;
-            }
-            &:hover:after {
-                transition: all 0.3s linear;
-                transform: translate3d(-50%,-50%,0);
-            }
+            //&:hover {
+            //    transform: scale(1.1);
+            //    transition: all 0.3s linear;
+            //}
+            //&:hover:after {
+            //    transition: all 0.3s linear;
+            //    transform: translate3d(-50%,-50%,0);
+            //}
 
         }
         svg {
             width: 60px;
             height: 60px;
             fill: $color-white;
+            transition: all 0.3s linear;
         }
     }
     &__title {
@@ -105,4 +140,8 @@
         text-align: center;
         display: inline-block;
     }
+}
+#education-software {
+    width: 60px;
+    height: 60px;
 }

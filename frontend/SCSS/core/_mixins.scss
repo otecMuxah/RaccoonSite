@@ -18,31 +18,31 @@
     font: $weight #{$size}px/#{$line-height}px '#{$family}', Arial, Helvetica sans-serif;
 }
 
-@mixin width-1400 {
-    @media screen and (max-width: $res_1400) {
+@mixin width-1140 {
+    @media screen and (max-width: $res_1140) {
         @content;
     }
 }
-@mixin width-1200 {
-    @media screen and (max-width: $res_1220) {
-        @content;
-    }
-}
-@mixin desktop {
-    @media screen and (max-width: $res_1000) {
-        @content;
-    }
-}
+//@mixin width-1200 {
+//    @media screen and (max-width: $res_1220) {
+//        @content;
+//    }
+//}
+//@mixin desktop {
+//    @media screen and (max-width: $res_1000) {
+//        @content;
+//    }
+//}
 @mixin tablet {
-  @media screen and (max-width: $res_770) {
+  @media screen and (max-width: $res_800) {
     @content;
   }
 }
-@mixin px610 {
-  @media screen and (max-width: $res_610) {
-    @content;
-  }
-}
+//@mixin px610 {
+//  @media screen and (max-width: $res_610) {
+//    @content;
+//  }
+//}
 @mixin phone {
   @media screen and (max-width: $res_550) {
     @content;

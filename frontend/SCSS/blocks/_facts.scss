@@ -3,7 +3,7 @@
     &__list {
         display: flex;
         margin: 0 auto;
-        width: 1140px;
+        max-width: 1140px;
         justify-content: space-between;
         position: relative;
         z-index: 1;
@@ -18,6 +18,13 @@
             left: 50%;
             transform: translateX(-50%);
         }
+        @include phone {
+            flex-direction: column;
+            align-items: center;
+            &:after {
+                display: none;
+            }
+        }
     }
     &__item {
         display: flex;
@@ -26,6 +33,9 @@
         text-align: center;
         max-width: 360px;
         margin-left: 33px;
+        @include phone {
+            margin: 0 0 35px 33px;
+        }
     }
     &__title {
         font: 700 72px/96px $font_ph;

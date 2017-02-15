@@ -28,6 +28,7 @@
         display: none;
         width: 80px;
         height: 80px;
+        background: $color-green;
         .header--fixed & {
             display: block;
         }
@@ -36,5 +37,6 @@
         position: fixed;
         background: $color-white;
         color: $color-black;
+        z-index: 10;
     }
 }
