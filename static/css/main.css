@@ -106,7 +106,7 @@ body {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 14.45px 2.55px rgba(0, 0, 2, 0.2);
-  position: fixed;
+  position: absolute;
   z-index: 1;
   color: #fff;
   top: 0;
@@ -144,8 +144,8 @@ body {
     background: #fff;
     color: #222;
     z-index: 10;
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear; }
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear; }
     .header--fixed .header__wrapper {
       height: 60px; }
   .header .hamburger {
@@ -289,24 +289,26 @@ body {
       width: 100%;
       left: 0;
       padding: 12px; }
-      .header-nav__item:before {
-        content: '';
-        position: absolute;
-        left: -4px;
-        top: 0;
-        width: 2px;
-        height: 0;
-        bottom: auto;
-        -webkit-transform: translate(0, 0) translateZ(0);
-                transform: translate(0, 0) translateZ(0);
-        background: #72bb25;
-        -webkit-transition: all 0.3s linear;
-        transition: all 0.3s linear; }
-      .header-nav__item:hover:before {
-        width: 2px;
-        height: 22px;
-        -webkit-transition: height 0.2s linear;
-        transition: height 0.2s linear; }
+      .header-nav__item {
+        margin-bottom: 15px; }
+        .header-nav__item:before {
+          content: '';
+          position: absolute;
+          left: -4px;
+          top: 0;
+          width: 2px;
+          height: 0;
+          bottom: auto;
+          -webkit-transform: translate(0, 0) translateZ(0);
+                  transform: translate(0, 0) translateZ(0);
+          background: #72bb25;
+          -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear; }
+        .header-nav__item:hover:before {
+          width: 2px;
+          height: 22px;
+          -webkit-transition: height 0.2s linear;
+          transition: height 0.2s linear; }
       .header-nav__drop-wrapper {
         position: static;
         -webkit-transform: translate(0, 0);
@@ -363,6 +365,10 @@ body {
     @media screen and (max-width: 1140px) {
       .main-banner__header {
         text-align: center; } }
+    @media screen and (max-width: 550px) {
+      .main-banner__header {
+        font-size: 32px;
+        line-height: 40px; } }
   .main-banner__paragraph {
     font: 36px/43px roboto-light, Arial, sans-serif;
     max-width: 690px;
@@ -370,6 +376,10 @@ body {
     position: relative;
     padding-bottom: 21px;
     margin-bottom: 45px; }
+    @media screen and (max-width: 550px) {
+      .main-banner__paragraph {
+        font-size: 20px;
+        line-height: 25px; } }
     .main-banner__paragraph:after {
       content: '';
       height: 3px;
@@ -384,11 +394,15 @@ body {
       font: 20px/25px roboto-light, Arial, sans-serif;
       padding-bottom: 0;
       margin-bottom: 31px; }
+      @media screen and (max-width: 550px) {
+        .main-banner__paragraph--small {
+          font-size: 14px;
+          line-height: 20px; } }
       .main-banner__paragraph--small:after {
         display: none; }
   .main-banner__more {
     position: absolute;
-    bottom: 2vh;
+    bottom: 5vh;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);

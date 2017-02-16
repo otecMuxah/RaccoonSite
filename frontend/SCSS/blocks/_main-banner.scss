@@ -3,10 +3,8 @@
     background: url("../images/main-banner-bg.jpg") repeat-y;
     z-index: 0;
     position: relative;
-
     color: $color-white;
     padding: 160px 0 158px;
-
     min-height: 100%;
     height: 100vh;
     box-sizing: border-box;
@@ -41,6 +39,10 @@
         @include width-1140 {
             text-align: center;
         }
+        @include phone {
+            font-size: 32px;
+            line-height: 40px;
+        }
     }
     &__paragraph {
         font: 36px/43px $font_light;
@@ -49,6 +51,10 @@
         position: relative;
         padding-bottom: 21px;
         margin-bottom: 45px;
+        @include phone {
+            font-size: 20px;
+            line-height: 25px;
+        }
         &:after {
             content: '';
             height: 3px;
@@ -63,6 +69,10 @@
             font: 20px/25px $font_light;
             padding-bottom: 0;
             margin-bottom: 31px;
+            @include phone {
+                font-size: 14px;
+                line-height: 20px;
+            }
             &:after {
                 display: none;
             }
@@ -70,7 +80,7 @@
     }
     &__more {
         position: absolute;
-        bottom: 2vh;
+        bottom: 5vh;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
