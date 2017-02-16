@@ -80,7 +80,7 @@
     }
     &__more {
         position: absolute;
-        bottom: 5vh;
+        bottom: 7vh;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
@@ -90,6 +90,9 @@
         cursor: pointer;
         opacity: 1;
         transition: opacity .6s ease;
+        @include phone {
+            bottom: 10vh;
+        }
         &:after {
             content: '';
             margin: 0 auto;

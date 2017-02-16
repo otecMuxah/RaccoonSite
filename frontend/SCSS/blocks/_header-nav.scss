@@ -9,7 +9,6 @@
         font-family:  $font_ph_bold;
         font-size: 18px;
         line-height: 23px;
-
         .header--fixed & {
             color: $color-black;
         }
@@ -29,6 +28,11 @@
         .header-nav__item--dropdown:hover &:after {
             transform: translateY(-50%) rotate(180deg);
             transition: all 0.2s linear;
+        }
+        @include tablet {
+            .header--fixed & {
+                color: $color-white;
+            }
         }
     }
     &__item {
@@ -71,6 +75,13 @@
         border-radius: 0 0 12px 12px;
         position: relative;
         padding: 12px 0;
+        @include tablet {
+            margin: 10px -12px 0;
+            border-radius: 0;
+            &:after {
+                display: none;
+            }
+        }
         &:after {
             content: '';
             position: absolute;
@@ -98,6 +109,9 @@
         font: 12px/17px $font;
         text-transform: uppercase;
         white-space: nowrap;
+        @include tablet {
+            color: $color-white;
+        }
     }
     &__visible {
         display: block !important;
@@ -106,7 +120,7 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        background: $color-dark-blue;
+        background: #232c44;
         bottom: 0;
         transform: translateY(100%);
         width: 100%;
