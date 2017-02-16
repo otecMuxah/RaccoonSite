@@ -28,11 +28,11 @@
 //        @content;
 //    }
 //}
-//@mixin desktop {
-//    @media screen and (max-width: $res_1000) {
-//        @content;
-//    }
-//}
+@mixin desktop {
+    @media screen and (max-width: $res_1000) {
+        @content;
+    }
+}
 @mixin tablet {
   @media screen and (max-width: $res_800) {
     @content;

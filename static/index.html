@@ -488,7 +488,22 @@
             </a>
             <ul class="header-nav">
                 <li class="header-nav__item"><a href="#" class="header-nav__link">ABOUT US</a></li>
-                <li class="header-nav__item"><a href="#" class="header-nav__link">OPEN edX SERVICES</a></li>
+                <li class="header-nav__item header-nav__item--dropdown"><a href="#" class="header-nav__link">OPEN edX SERVICES</a>
+                    <div class="header-nav__drop-wrapper">
+                        <ul class="header-nav__drop-list">
+                            <li class="header-nav__drop-item">
+                                <a href="#" class="header-nav__drop-link">OPEN EDX MOBILE APPLICATION DEVELOPMENT</a>
+                            </li>
+                            <li class="header-nav__drop-item">
+                                <a href="#" class="header-nav__drop-link">OPEN EDX MOBILE APPLICATION DEVELOPMENT</a>
+                            </li>
+                            <li class="header-nav__drop-item">
+                                <a href="#" class="header-nav__drop-link">OPEN EDX MOBILE APPLICATION DEVELOPMENTt</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
                 <li class="header-nav__item"><a href="" class="header-nav__link">SOLUTIONS</a></li>
                 <li class="header-nav__item"><a href="" class="header-nav__link">RACCOON UNIVERSITY</a></li>
                 <li class="header-nav__item"><a href="" class="header-nav__link">PRICING</a></li>
@@ -496,6 +511,11 @@
                 <li class="header-nav__item"><a href="" class="header-nav__link">CONTACT US</a></li>
             </ul>
             <a href="#" class="button">Request Demo</a>
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
         </header>
     </div>
     <div class="main-banner">
@@ -794,6 +814,10 @@
             slideMargin: 5,
             pager: false
         });
+        $('.hamburger').on('click', function () {
+            $(this).toggleClass('is-active');
+            $('.header-nav').toggleClass('header-nav__visible');
+        })
         $.fn.isOnScreen = function(){
             var element = this.get(0);
             var bounds = element.getBoundingClientRect();
