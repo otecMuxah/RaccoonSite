@@ -12,12 +12,6 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'roboto-light';
-    src: url('../fonts/roboto-light.woff') format('woff'), url('../fonts/roboto-light.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'phenomenaregular';
     src: url('../fonts/phenomena-regular.woff') format('woff'), url('../fonts/phenomena-regular.woff2') format('woff2');
     font-weight: normal;
@@ -25,7 +19,7 @@
 }
 @font-face {
     font-family: 'roboto-light';
-    src: url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.woff2') format('woff2');
+    src: url('../fonts/roboto-light.woff') format('woff'), url('../fonts/roboto-light.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -38,7 +32,7 @@ $res_1140:  1140px;
 
 //colors
 $color-blue:            #6699cc;
-$color-drk-blue:            #778fcf;
+$color-drk-blue:        #778fcf;
 $color-yellow:          #e5bd62;
 $color-beige:           #c7c7c7;
 $color-green:           #72bb25;
