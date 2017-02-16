@@ -13,10 +13,14 @@
             display: none;
         }
         margin-bottom: 30px;
+        @include phone {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     &__item {
         width: 300px;
-        &:nth-child(2) {
+        &:nth-child(3) {
             position: relative;
             &:before,
             &:after {
@@ -27,12 +31,17 @@
                 width: 298px;
                 top: 28%;
                 left: -1px;
-                transform: translateX(71%);
+                transform: translateX(-70%);
             }
             &:after {
-                right: 0;
-                left: auto;
+                left: -417px;
                 transform: translateX(-71%);
+            }
+        }
+        @include width-1140 {
+            &:before,
+            &:after {
+                display: none;
             }
         }
     }

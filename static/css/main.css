@@ -1085,6 +1085,15 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media screen and (max-width: 1000px) {
+      .why-open-edx__list {
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
+    @media screen and (max-width: 550px) {
+      .why-open-edx__list {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
   .why-open-edx__image {
     visibility: visible;
     height: 60px;
@@ -1317,11 +1326,18 @@ body {
     margin-bottom: 30px; }
     .our-services__list:after {
       display: none; }
+    @media screen and (max-width: 550px) {
+      .our-services__list {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
   .our-services__item {
     width: 300px; }
-    .our-services__item:nth-child(2) {
+    .our-services__item:nth-child(3) {
       position: relative; }
-      .our-services__item:nth-child(2):before, .our-services__item:nth-child(2):after {
+      .our-services__item:nth-child(3):before, .our-services__item:nth-child(3):after {
         content: '';
         position: absolute;
         height: 2px;
@@ -1329,13 +1345,15 @@ body {
         width: 298px;
         top: 28%;
         left: -1px;
-        -webkit-transform: translateX(71%);
-                transform: translateX(71%); }
-      .our-services__item:nth-child(2):after {
-        right: 0;
-        left: auto;
+        -webkit-transform: translateX(-70%);
+                transform: translateX(-70%); }
+      .our-services__item:nth-child(3):after {
+        left: -417px;
         -webkit-transform: translateX(-71%);
                 transform: translateX(-71%); }
+    @media screen and (max-width: 1140px) {
+      .our-services__item:before, .our-services__item:after {
+        display: none; } }
   .our-services__title {
     color: #fff; }
   .our-services__image-wrapper {
