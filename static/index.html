@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript" src="script/jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="script/lodash.min.js"></script>
     <script src="script/jquery.bxslider.min.js"></script>
 </head>
 <body>
@@ -1026,7 +1026,7 @@
 <script>
     $(document).ready(function () {
         var fired = 0,
-            scrollFlag = 0,
+            whiteHeader = 0,
             $hamburger = $('.hamburger'),
             $headNav = $('.header-nav'),
             $header = $('.header'),
@@ -1072,26 +1072,30 @@
             }
         }
 
-        $window.resize($.throttle(250, function () {
+        $window.resize(_.throttle(function () {
             var viewportWidth = $(window).width();
             if (viewportWidth > 800) {
                 $hamburger.removeClass('is-active');
                 $headNav.removeClass('header-nav__visible');
             }
-        }));
+        }), 250);
 
-        $window.scroll($.throttle(1000, function () {
+        var callbackScroll = function() {
             if ($window.scrollTop() > $window.height() - 160) {
+                whiteHeader = 1;
                 $header.addClass('header--fixed');
                 $mainBannerMore.addClass('hidden');
             } else {
+                whiteHeader = 0;
                 $header.removeClass('header--fixed');
                 $mainBannerMore.removeClass('hidden');
             }
             if (fired == 0){
                 showElement();
             }
-        }))
+        };
+
+        window.addEventListener('scroll',_.throttle(callbackScroll, 1000));
     });
 </script>
 </body>
