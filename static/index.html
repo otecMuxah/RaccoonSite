@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="script/jquery.ba-throttle-debounce.min.js"></script>
     <script src="script/jquery.bxslider.min.js"></script>
 </head>
 <body>
@@ -583,7 +584,7 @@
             </li>
             <li class="facts__item facts__item--sudents">
                 <div class="facts__title facts__title--wrapper">
-                    <span class="facts__title count">700K</span><span class="facts__title">K+</span>
+                    <span class="facts__title count">700</span><span class="facts__title">K+</span>
                 </div>
                 <span class="facts__header">Sudents</span>
                 <p class="facts__paragraph">600,000+ learners enrolled on courses delivered via our elearni</p>
@@ -819,13 +820,6 @@
             $(this).toggleClass('is-active');
             $('.header-nav').toggleClass('header-nav__visible');
         });
-//        $(window).resize(function () {
-//            var viewportWidth = $(window).width();
-//            if (viewportWidth > 800) {
-//                $('.hamburger').removeClass('is-active');
-//                $('.header-nav').removeClass('header-nav__visible');
-//            }
-//        });
         $.fn.isOnScreen = function(){
             var element = this.get(0);
             var bounds = element.getBoundingClientRect();
@@ -847,8 +841,14 @@
                 });
             }
         }
-        showElement();
-        $(window).scroll(function () {
+        $(window).resize($.throttle(500, function () {
+            var viewportWidth = $(window).width();
+            if (viewportWidth > 800) {
+                $('.hamburger').removeClass('is-active');
+                $('.header-nav').removeClass('header-nav__visible');
+            }
+        }));
+        $(window).scroll($.throttle(250, function () {
             if ($(window).scrollTop() > 80) {
                 $('.header').addClass('header--fixed');
                 $('.main-banner').addClass('main-banner--nomargins');
@@ -859,7 +859,7 @@
             if (fired == 0){
                 showElement();
             }
-        })
+        }))
     });
 </script>
 </body>
