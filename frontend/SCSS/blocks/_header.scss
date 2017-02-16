@@ -26,8 +26,8 @@
     }
     &__logo-super {
         display: none;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         background: $color-green;
         .header--fixed & {
             display: block;
@@ -38,6 +38,10 @@
         background: $color-white;
         color: $color-black;
         z-index: 10;
+        transition: all 0.1s linear;
+        .header__wrapper {
+            height: 60px;
+        }
     }
     .hamburger {
         display: none;

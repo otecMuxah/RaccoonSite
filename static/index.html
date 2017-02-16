@@ -512,11 +512,11 @@
                 <li class="header-nav__item"><a href="" class="header-nav__link">CONTACT US</a></li>
             </ul>
             <a href="#" class="button">Request Demo</a>
-            <button class="hamburger hamburger--elastic" type="button">
+            <div class="hamburger hamburger--elastic" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
-            </button>
+            </div>
         </header>
     </div>
     <div class="main-banner">
@@ -818,7 +818,14 @@
         $('.hamburger').on('click', function () {
             $(this).toggleClass('is-active');
             $('.header-nav').toggleClass('header-nav__visible');
-        })
+        });
+//        $(window).resize(function () {
+//            var viewportWidth = $(window).width();
+//            if (viewportWidth > 800) {
+//                $('.hamburger').removeClass('is-active');
+//                $('.header-nav').removeClass('header-nav__visible');
+//            }
+//        });
         $.fn.isOnScreen = function(){
             var element = this.get(0);
             var bounds = element.getBoundingClientRect();

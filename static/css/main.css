@@ -133,8 +133,8 @@ body {
       display: none; }
   .header__logo-super {
     display: none;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background: #72bb25; }
     .header--fixed .header__logo-super {
       display: block; }
@@ -142,7 +142,11 @@ body {
     position: fixed;
     background: #fff;
     color: #222;
-    z-index: 10; }
+    z-index: 10;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear; }
+    .header--fixed .header__wrapper {
+      height: 60px; }
   .header .hamburger {
     display: none; }
   @media screen and (max-width: 1000px) {
@@ -174,7 +178,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 665px; }
+  width: 665px;
+  box-sizing: border-box; }
   .header-nav__link {
     position: relative;
     color: #fff;
@@ -899,8 +904,8 @@ body {
           animation-iteration-count: 1;
   display: block;
   margin: 0 auto;
-  width: 80px;
-  height: 80px; }
+  width: 60px;
+  height: 60px; }
 
 #raccoon-logo:hover {
   -webkit-filter: drop-shadow(0px 0px 30px #fff);
