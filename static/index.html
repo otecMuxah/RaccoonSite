@@ -1025,7 +1025,13 @@
 </div>
 <script>
     $(document).ready(function () {
-        var fired = 0;
+        var fired = 0,
+            scrollFlag = 0,
+            $hamburger = $('.hamburger'),
+            $headNav = $('.header-nav'),
+            $header = $('.header'),
+            $mainBannerMore = $('.main-banner__more'),
+            $window = $(window);
 
         $('.bxslider').bxSlider({
             minSlides: 2,
@@ -1034,11 +1040,11 @@
             slideMargin: 5,
             pager: false
         });
-        $('.hamburger').on('click', function () {
+        $hamburger.on('click', function () {
             $(this).toggleClass('is-active');
             $('.header-nav').toggleClass('header-nav__visible');
         });
-        $('.main-banner__more').on('click', function () {
+        $mainBannerMore.on('click', function () {
             $('html,body').animate({
                     scrollTop: $(".partners").offset().top - 60},
             'slow');
@@ -1065,22 +1071,22 @@
                 });
             }
         }
-        
-        $(window).resize($.throttle(250, function () {
+
+        $window.resize($.throttle(250, function () {
             var viewportWidth = $(window).width();
             if (viewportWidth > 800) {
-                $('.hamburger').removeClass('is-active');
-                $('.header-nav').removeClass('header-nav__visible');
+                $hamburger.removeClass('is-active');
+                $headNav.removeClass('header-nav__visible');
             }
         }));
-        $(window).scroll($.throttle(250, function () {
-            if ($(window).scrollTop() > $(window).height() - 160) {
-                $('.header').addClass('header--fixed');
-                $('.main-banner').addClass('main-banner--nomargins');
-                $('.main-banner_more').addClass('hidden');
+
+        $window.scroll($.throttle(1000, function () {
+            if ($window.scrollTop() > $window.height() - 160) {
+                $header.addClass('header--fixed');
+                $mainBannerMore.addClass('hidden');
             } else {
-                $('.header').removeClass('header--fixed');
-                $('.main-banner').removeClass('main-banner--nomargins');
+                $header.removeClass('header--fixed');
+                $mainBannerMore.removeClass('hidden');
             }
             if (fired == 0){
                 showElement();
