@@ -611,6 +611,9 @@
             <p class="main-banner__paragraph main-banner__paragraph--small">Try our learning management system and
                 deliver online learning using the top-notch learning technology</p>
             <a href="#" class="button">Request Demo</a>
+            <div class="main-banner__more">
+                More Below
+            </div>
         </div>
     </div>
     <div class="partners">
@@ -903,6 +906,12 @@
             $(this).toggleClass('is-active');
             $('.header-nav').toggleClass('header-nav__visible');
         });
+        $('.main-banner__more').on('click', function () {
+            $('html,body').animate({
+                    scrollTop: $(".partners").offset().top - 60},
+            'slow');
+        });
+
         $.fn.isOnScreen = function(){
             var element = this.get(0);
             var bounds = element.getBoundingClientRect();
@@ -924,6 +933,7 @@
                 });
             }
         }
+        
         $(window).resize($.throttle(250, function () {
             var viewportWidth = $(window).width();
             if (viewportWidth > 800) {
@@ -932,7 +942,7 @@
             }
         }));
         $(window).scroll($.throttle(250, function () {
-            if ($(window).scrollTop() > 80) {
+            if ($(window).scrollTop() > $(window).height() - 160) {
                 $('.header').addClass('header--fixed');
                 $('.main-banner').addClass('main-banner--nomargins');
             } else {

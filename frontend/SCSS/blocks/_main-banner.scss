@@ -3,20 +3,23 @@
     background: url("../images/main-banner-bg.jpg") repeat-y;
     z-index: 0;
     position: relative;
-    top: -80px;
+
     color: $color-white;
     padding: 160px 0 158px;
-    margin-bottom: -80px;
+
     min-height: 100%;
     height: 100vh;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include width-1140 {
         padding: 160px 10px 158px;
         box-sizing: border-box;
     }
     &--nomargins {
-        top: 0;
-        margin-bottom: 0;
+        //top: 0;
+        //margin-bottom: 0;
     }
     &__wrapper {
         max-width: 1140px;
@@ -64,5 +67,45 @@
                 display: none;
             }
         }
+    }
+    &__more {
+        position: absolute;
+        bottom: 2vh;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 0;
+        font-weight: 300;
+        color: #fff;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity .6s ease;
+        &:after {
+            content: '';
+            margin: 0 auto;
+            display: block;
+            left: 0;
+            right: 0;
+            position: relative;
+            bottom: 0;
+            width: 18px;
+            height: 18px;
+            border-right: 3px solid #fff;
+            border-bottom: 3px solid #fff;
+            transform: rotate(45deg);
+            animation: more-arrow .8s infinite linear
+        }
+
+    }
+}
+@keyframes more-arrow {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: -15px;
+    }
+    100% {
+        bottom: 0;
     }
 }
