@@ -1020,9 +1020,9 @@
         </div>
     </div>
 </div>
-<script src="script/jquery-2.2.4.min.js"></script>
-<script type="text/javascript" src="script/lodash.min.js"></script>
-<script src="script/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="script/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="script/jquery.ba-throttle-debounce.min.js"></script>
+<script type="text/javascript" src="script/jquery.bxslider.min.js"></script>
 <script>
     $(document).ready(function () {
         var fired = 0,
@@ -1072,13 +1072,13 @@
             }
         }
 
-        $window.resize(_.throttle(function () {
+        $window.resize($.throttle(250, function () {
             var viewportWidth = $(window).width();
             if (viewportWidth > 800) {
                 $hamburger.removeClass('is-active');
                 $headNav.removeClass('header-nav__visible');
             }
-        }), 250);
+        }));
 
         var callbackScroll = function() {
             if ($window.scrollTop() > $window.height() - 160) {
@@ -1095,7 +1095,7 @@
             }
         };
 
-        window.addEventListener('scroll',_.throttle(callbackScroll, 1000));
+        window.addEventListener('scroll',$.throttle(1000, callbackScroll));
     });
 </script>
 </body>
