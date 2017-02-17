@@ -47,7 +47,7 @@
         &:hover {
             .why-open-edx__item-wrapper {
                 transform: translateX(99%);
-                transition: all 0.3s linear;
+                transition: transform 0.3s linear;
             }
             .why-open-edx__text-wrapper {
                 color: $color-black;
@@ -80,7 +80,6 @@
         height: 100%;
         transition: all 0.3s linear;
         z-index: 1;
-        transform: translateZ(0);
         &:before {
             content: '';
             position: absolute;
@@ -102,7 +101,6 @@
         height: 100%;
         color: $color-white;
         z-index: 0;
-        transform: translateZ(0);
         padding: 14px 18px;
         display: flex;
         align-items: center;

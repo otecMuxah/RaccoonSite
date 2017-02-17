@@ -31,11 +31,11 @@
                 width: 298px;
                 top: 28%;
                 left: -1px;
-                transform: translateX(-70%);
+                transform: translate(-70%,0);
             }
             &:after {
                 left: -417px;
-                transform: translateX(-71%);
+                transform: translate(-71%,0);
             }
         }
         @include width-1140 {

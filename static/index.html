@@ -1055,22 +1055,22 @@
             var bounds = element.getBoundingClientRect();
             return bounds.top < window.innerHeight && bounds.bottom > 0;
         };
-        function showElement() {
-            if (fired == 0 && $('.count').isOnScreen()) {
-                fired = 1;
-                $('.count').each(function () {
-                    $(this).prop('Counter',0).animate({
-                        Counter: $(this).text()
-                    }, {
-                        duration: 800,
-                        easing: 'swing',
-                        step: function (now) {
-                            $(this).text(Math.ceil(now));
-                        }
-                    });
-                });
-            }
-        }
+//        function showElement() {
+//            if (fired == 0 && $('.count').isOnScreen()) {
+//                fired = 1;
+//                $('.count').each(function () {
+//                    $(this).prop('Counter',0).animate({
+//                        Counter: $(this).text()
+//                    }, {
+//                        duration: 800,
+//                        easing: 'swing',
+//                        step: function (now) {
+//                            $(this).text(Math.ceil(now));
+//                        }
+//                    });
+//                });
+//            }
+//        }
 
         $window.resize($.throttle(250, function () {
             var viewportWidth = $(window).width();
@@ -1091,7 +1091,7 @@
                 $mainBannerMore.removeClass('hidden');
             }
             if (fired == 0){
-                showElement();
+//                showElement();
             }
         };
 

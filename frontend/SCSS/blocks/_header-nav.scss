@@ -23,11 +23,11 @@
             border-width: 5px 4px 0 4px;
             border-color: #ffffff transparent transparent;
             transform: translateY(-50%);
-            transition: all 0.2s linear;
+            transition: transform 0.2s linear;
         }
         .header-nav__item--dropdown:hover &:after {
             transform: translateY(-50%) rotate(180deg);
-            transition: all 0.2s linear;
+            transition: transform 0.2s linear;
         }
         @include tablet {
             .header--fixed & {
@@ -42,16 +42,15 @@
             position: absolute;
             bottom: -5px;
             left: 50%;
-            transform: translateX(-50%) translateZ(0);
+            transform: translateX(-50%);
             height: 3px;
-            width: 0;
+            width: 100%;
+            visibility: hidden;
             background: $color-green;
-            transition: all 0.3s linear;
         }
         &:hover {
             &:before {
-                width: 100%;
-                transition: all 0.2s linear;
+                visibility: visible;
             }
             .header-nav__drop-wrapper {
                 display: block;
@@ -92,7 +91,7 @@
             border-style: solid;
             border-width: 0 10px 10px 10px;
             border-color: transparent transparent #778fcf;
-            transform: rotate(360deg) translate(-50%, -100%);
+            transform: rotate(360deg) translate(-50%,-100%);
         }
     }
     &__drop-item {
@@ -122,7 +121,7 @@
         position: absolute;
         background: #232c44;
         bottom: 0;
-        transform: translateY(100%);
+        transform: translate(0,100%);
         width: 100%;
         left: 0;
         padding: 12px;
@@ -136,14 +135,12 @@
                 width: 2px;
                 height: 0;
                 bottom: auto;
-                transform: translate(0,0) translateZ(0);
+                transform: translate(0,0);
                 background: $color-green;
-                transition: all 0.3s linear;
             }
             &:hover:before {
                 width: 2px;
                 height: 22px;
-                transition: height 0.2s linear;
             }
         }
         &__drop-wrapper {
