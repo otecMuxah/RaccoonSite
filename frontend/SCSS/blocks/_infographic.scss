@@ -1,0 +1,176 @@
+.infographic {
+    width: 100%;
+    background: $color-almost-white;
+    &__wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    &__list-holder {
+        position: relative;
+        max-width: 1140px;
+        width: 100%;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            border: 4px dashed #c7c7c7;
+            border-radius: 50%;
+            top: 218px;
+            left: 12px;
+            z-index: 0;
+            box-sizing: border-box;
+        }
+        &:after  {
+            right: 12px;
+            left: auto;
+            z-index: 0;
+            box-sizing: border-box;
+        }
+    }
+    &__list {
+        max-width: 860px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: relative;
+        background: $color-almost-white;
+        box-sizing: border-box;
+        height: 710px;
+        z-index: 1;
+    }
+    &__item{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-basis: 33%;
+        &--low-row {
+            flex-basis: 50%;
+            align-self: flex-end;
+        }
+    }
+    &__holder {
+        width: 265px;
+        height: 325px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background: $color-white;
+        box-sizing: border-box;
+        padding: 25px 15px;
+        text-align: center;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 67%;
+            width: 100%;
+            border: 2px dashed $color-beige;
+            z-index: 0;
+            box-sizing: border-box;
+        }
+        .infographic__item--low-row & {
+            &:after {
+                top: 33.5%;
+            }
+        }
+    }
+    &__number {
+        border: 15px solid $color-green;
+        width: 61px;
+        height: 61px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: 38px $font_ph_bold;
+        position: relative;
+        margin-bottom: 52px;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            background: $color-green;
+            z-index: 1;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 7px;
+            height: 26px;
+            background: $color-green;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .infographic__item--low-row & {
+            margin-bottom: 10px;
+            margin-top: 60px;
+            &:before {
+                bottom: auto;
+                top: -60px;
+            }
+            &:after {
+                bottom: auto;
+                top: -40px;
+            }
+        }
+    }
+    &__header {
+        font: 25px/25px $font_ph_bold;
+        color: $color-green;
+        margin-bottom: 20px;
+        width: 200px;
+        .infographic__item--low-row & {
+            margin-bottom: 10px;
+        }
+    }
+    &__text {
+        font: 14px $font_light;
+    }
+    &__styleline {
+        position: absolute;
+        border: 1px solid $color-beige;
+        border-top: none;
+        border-radius: 0 0 12px 12px;
+        top: 415px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 575px;
+        height: 27px;
+        z-index: 2;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            top: 0;
+            background: $color-green;
+            transform: translate(-50%,-75%);
+        }
+        &:after {
+            right: 0;
+            transform: translate(50%,-75%);
+        }
+    }
+    &__more-styleline {
+        position: relative;
+        width: 100%;
+
+    }
+}

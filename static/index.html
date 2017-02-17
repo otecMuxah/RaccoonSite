@@ -1019,6 +1019,53 @@
             </ul>
         </div>
     </div>
+    <div class="infographic">
+        <div class="infographic__wrapper">
+            <h2 class="infographic__title solutions__title">Process "Infographic"</h2>
+            <div class="infographic__list-holder">
+                <ul class="infographic__list">
+                    <li class="infographic__item">
+                        <div class="infographic__holder">
+                            <span class="infographic__header">Courseware Infrastructure</span>
+                            <span class="infographic__number">1</span>
+                            <span class="infographic__text">Pre-platform development; <a href="#" class="infographic__link">get started for free</a>; trialcourse; try with several students; toolset training</span>
+                        </div>
+                    </li>
+                    <li class="infographic__item">
+                        <div class="infographic__holder">
+                            <span class="infographic__header">Courseware Infrastructure</span>
+                            <span class="infographic__number">2</span>
+                            <span class="infographic__text">Pre-platform development; <a href="#" class="infographic__link">get started for free</a>; trialcourse; try with several students; toolset training</span>
+                        </div>
+                    </li>
+                    <li class="infographic__item">
+                        <div class="infographic__holder">
+                            <span class="infographic__header">Courseware Infrastructure</span>
+                            <span class="infographic__number">3</span>
+                            <span class="infographic__text">Pre-platform development; <a href="#" class="infographic__link">get started for free</a>; trialcourse; try with several students; toolset training</span>
+                        </div>
+                    </li>
+                    <li class="infographic__item infographic__item--low-row">
+                        <div class="infographic__holder">
+                            <span class="infographic__header">Courseware Infrastructure</span>
+                            <span class="infographic__number">4</span>
+                            <span class="infographic__text">Pre-platform development; <a href="#" class="infographic__link">get started for free</a>; trialcourse; try with several students; toolset training</span>
+                        </div>
+                    </li>
+                    <li class="infographic__item infographic__item--low-row">
+                        <div class="infographic__holder">
+                            <span class="infographic__header">Courseware Infrastructure</span>
+                            <span class="infographic__number">5</span>
+                            <span class="infographic__text">Pre-platform development; <a href="#" class="infographic__link">get started for free</a>; trialcourse; try with several students; toolset training</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="infographic__styleline">
+                <div class="infographic__more-styleline"></div>
+            </div>
+        </div>
+    </div>
 </div>
 <script type="text/javascript" src="script/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="script/jquery.ba-throttle-debounce.min.js"></script>
@@ -1051,7 +1098,7 @@
         });
 
         $.fn.isOnScreen = function(){
-            var element = this.get(0);
+            var element = this[0];
             var bounds = element.getBoundingClientRect();
             return bounds.top < window.innerHeight && bounds.bottom > 0;
         };
