@@ -1,0 +1,125 @@
+.testimonials {
+    width: 100%;
+    background: url("../images/testimonials-bg.jpg") no-repeat 75% 0;
+    background-size: cover;
+    padding: 80px 0;
+    &__wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &__image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        transition: filter 0.3s linear;
+        filter: grayscale(1);
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__text-holder {
+        position: absolute;
+        bottom: -40px;
+        width: 740px;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include tablet {
+            width: 100%;
+        }
+    }
+    &__title {
+        font: 22px/28px $font_ph_bold;
+        color:  $color-green;
+        text-transform: uppercase;
+    }
+    &__title-desc {
+        font: 16px/23px $font_light;
+        color: #949494;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font: 18px/24px $font_light;
+        color: $color-black;
+    }
+
+    .owl-carousel {
+        .owl-item {
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: auto;
+            }
+        }
+        .owl-stage-outer {
+            height: 500px;
+        }
+        .center {
+            width: 220px;
+            height: 220px;
+
+            .testimonials__image {
+                width: 220px;
+                height: 220px;
+
+                filter: grayscale(0);
+            }
+            .testimonials__text-holder {
+                visibility: visible;
+                transition: visibility 0.1s linear 0.3s;
+            }
+
+        }
+        .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+            display: flex;
+        }
+        .owl-nav {
+            position: absolute;
+            top: 105px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            .owl-next {
+                position: relative;
+                background: url(../images/arrow.png) no-repeat;
+                width: 13px;
+                height: 20px;
+                text-indent: 0;
+                font-size: 0;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            .owl-prev {
+                width: 13px;
+                height: 20px;
+                text-indent: 0;
+                font-size: 0;
+                background: url(../images/arrow.png) no-repeat;
+                transform: rotate(180deg);
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

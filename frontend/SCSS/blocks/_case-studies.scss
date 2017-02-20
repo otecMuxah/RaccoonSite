@@ -1,0 +1,87 @@
+.case-studies {
+    background: $color-almost-white;
+    width: 100%;
+    &__wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 375px;
+        height: 255px;
+        background: url(../images/case-image.jpg) no-repeat;
+        background-size: cover;
+        margin-bottom: 5px;
+        @include phone {
+            width: 100%;
+        }
+    }
+    &__link {
+        height: 100%;
+        &:hover {
+            background: rgba(0,0,0,0.5);
+            transition: all 0.3s linear;
+            .case-studies__in-wrapper {
+                transform: translateY(0%);
+                transition: all 0.3s linear;
+            }
+            .case-studies__text {
+                visibility: visible;
+                transition: all 0.3s linear;
+            }
+            .case-studies__button {
+                visibility: visible;
+
+            }
+        }
+    }
+    &__in-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        transform: translateY(13%);
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    &__header {
+        font: 24px/30px $font_ph_bold;
+        color: $color-white;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 10px;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: $color-green;
+        }
+    }
+    &__text {
+        font: 18px/23px $font_light;
+        color: $color-white;
+        margin-bottom: 15px;
+    }
+    &__button {
+        color: $color-white;
+        box-shadow: inset 0 0 0 2px $color-white;
+        &:hover {
+            color: $color-black;
+            background: $color-white;
+            transition: all 0.2s linear;
+        }
+        visibility: hidden;
+    }
+
+}

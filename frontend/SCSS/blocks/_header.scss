@@ -48,6 +48,8 @@
         display: none;
     }
     @include desktop {
+        padding: 0 15px;
+        box-sizing: border-box;
         .button {
             display: none;
         }

@@ -1,6 +1,7 @@
 .infographic {
     width: 100%;
     background: $color-almost-white;
+    padding-bottom: 85px;
     &__wrapper {
         max-width: 1140px;
         margin: 0 auto;
@@ -32,6 +33,12 @@
             z-index: 0;
             box-sizing: border-box;
         }
+        @include width-1140 {
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
     }
     &__list {
         max-width: 860px;
@@ -46,6 +53,9 @@
         box-sizing: border-box;
         height: 710px;
         z-index: 1;
+        @include tablet {
+            height: auto;
+        }
     }
     &__item{
         position: relative;
@@ -56,6 +66,63 @@
             flex-basis: 50%;
             align-self: flex-end;
         }
+        &:nth-child(2) {
+            .infographic__header {
+                color: $color-greener;
+            }
+            .infographic__number {
+                border-color: $color-greener;
+                &:before,
+                &:after {
+                    background: $color-greener;
+                }
+            }
+        }
+        &:nth-child(3) {
+            .infographic__header {
+                color: $color-green-blue;
+            }
+            .infographic__number {
+                border-color: $color-green-blue;
+                &:before,
+                &:after {
+                    background: $color-green-blue;
+                }
+            }
+        }
+        &:nth-child(4) {
+            .infographic__header {
+                color: $color-drk-blue;
+            }
+            .infographic__number {
+                border-color: $color-drk-blue;
+                &:before,
+                &:after {
+                    background: $color-drk-blue;
+                }
+            }
+        }
+        &:nth-child(5) {
+            .infographic__header {
+                color: $color-mid-blue;
+            }
+            .infographic__number {
+                border-color: $color-mid-blue;
+                &:before,
+                &:after {
+                    background: $color-mid-blue;
+                }
+            }
+        }
+        @include tablet {
+            margin-bottom: 20px;
+            &--low-row {
+                flex-basis: 33%;
+                align-self: flex-start;
+            }
+        }
+
+
     }
     &__holder {
         width: 265px;
@@ -81,6 +148,11 @@
         .infographic__item--low-row & {
             &:after {
                 top: 33.5%;
+            }
+        }
+        @include width-1140 {
+            &:after {
+                display: none;
             }
         }
     }
@@ -127,6 +199,18 @@
                 bottom: auto;
                 top: -40px;
             }
+            @include width-1140 {
+                margin-bottom: 52px;
+                margin-top: 0;
+                &:before {
+                    bottom: -60px;
+                    top: auto;
+                }
+                &:after {
+                    bottom: -40px;
+                    top: auto;
+                }
+            }
         }
     }
     &__header {
@@ -152,6 +236,9 @@
         width: 575px;
         height: 27px;
         z-index: 2;
+        @include width-1140 {
+            display: none;
+        }
         &:before,
         &:after {
             content: '';
@@ -171,6 +258,6 @@
     &__more-styleline {
         position: relative;
         width: 100%;
-
     }
+
 }
