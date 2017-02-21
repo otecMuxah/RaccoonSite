@@ -2,18 +2,25 @@
     background: #ebebeb;
     padding: 25px 0;
     width: 100%;
-    margin-bottom: 65px;
     position: relative;
     &__wrapper {
         max-width: 1140px;
         margin: 0 auto;
+
     }
     &__link {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    &__list {
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
     .owl-carousel {
+        .owl-stage-outer {
+            z-index: 1;
+        }
         .owl-item {
             img {
                 width: auto;
@@ -27,6 +34,7 @@
             overflow: hidden;
             display: flex;
             justify-content: space-between;
+            z-index: 0;
             .owl-next {
                 position: relative;
                 background: url(../images/arrow.png) no-repeat;
