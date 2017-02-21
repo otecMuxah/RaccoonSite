@@ -6,7 +6,6 @@
     <title>RaccoonGANG</title>
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -672,39 +671,57 @@
         </div>
     </div>
     <div class="partners">
-        <div class="parnters__wrapper">
-            <ul class="partners__list bxslider">
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/microsft.png" alt="Microsoft"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/edx.png" alt="EDX"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/prometheus.png"
-                                                                                  alt="Prometheus"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/shindig.png" alt="Shindig"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/ucla.png" alt="UCLA"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/goit.png" alt="GoIT"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/labster.png" alt="Labster"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/microsft.png" alt="Microsoft"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/edx.png" alt="EDX"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/prometheus.png"
-                                                                                  alt="Prometheus"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/shindig.png" alt="Shindig"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/ucla.png" alt="UCLA"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/goit.png" alt="GoIT"
-                                                                                  class="partners__image"></a></li>
-                <li class="partners__item"><a href="" class="partners__link"><img src="images/labster.png" alt="Labster"
-                                                                                  class="partners__image"></a></li>
-            </ul>
+        <div class="partners__wrapper">
+            <div class="partners__list owl-carousel">
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/microsft.png" alt="Microsoft" class="partners__image">
+                    </a>
+                </div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/edx.png" alt="EDX" class="partners__image"></a></div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/prometheus.png" alt="Prometheus" class="partners__image">
+                    </a>
+                </div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/shindig.png" alt="Shindig" class="partners__image"></a></div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/ucla.png" alt="UCLA" class="partners__image"></a></div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/goit.png" alt="GoIT" class="partners__image"></a></div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/labster.png" alt="Labster" class="partners__image">
+                    </a>
+                </div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/microsft.png" alt="Microsoft" class="partners__image"></a></div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/edx.png" alt="EDX" class="partners__image"></a></div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/prometheus.png" alt="Prometheus" class="partners__image"></a></div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/shindig.png" alt="Shindig" class="partners__image"></a></div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/ucla.png" alt="UCLA" class="partners__image"></a></div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/goit.png" alt="GoIT" class="partners__image"></a></div>
+                <div class="partners__item">
+                    <a href="" class="partners__link">
+                        <img src="images/labster.png" alt="Labster" class="partners__image"></a></div>
+            </div>
         </div>
     </div>
     <div class="facts">
@@ -1260,7 +1277,7 @@
 </div>
 <script type="text/javascript" src="script/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="script/jquery.ba-throttle-debounce.min.js"></script>
-<script type="text/javascript" src="script/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="script/velocity.min.js"></script>
 <script type="text/javascript" src="script/owl.carousel.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -1272,7 +1289,7 @@
             $mainBannerMore = $('.main-banner__more'),
             $window = $(window);
 
-        $(".testimonials__list").owlCarousel({
+        $(".testimonials__list.owl-carousel").owlCarousel({
             startPosition: 2,
             center: true,
             items: 5,
@@ -1290,12 +1307,26 @@
                 }
             }
         });
-        $('.bxslider').bxSlider({
-            minSlides: 2,
-            maxSlides: 7,
-            slideWidth: 140,
-            slideMargin: 5,
-            pager: false
+
+        $('.partners__list.owl-carousel').owlCarousel({
+            margin: 10,
+            items: 7,
+            nav: true,
+            loop: true,
+            responsive: {
+                0: {
+                    items:2
+                },
+                400: {
+                    items:3
+                },
+                600: {
+                    items:5
+                },
+                1140: {
+                    items:7
+                }
+            }
         });
 
         $hamburger.on('click', function () {
@@ -1303,16 +1334,16 @@
             $('.header-nav').toggleClass('header-nav__visible');
         });
         $mainBannerMore.on('click', function () {
-            $('html,body').animate({
-                    scrollTop: $(".partners").offset().top - 60},
-            'slow');
+            $('.partners').velocity("scroll", {
+                offset: -60
+            });
         });
 
-        $.fn.isOnScreen = function(){
-            var element = this[0];
-            var bounds = element.getBoundingClientRect();
-            return bounds.top < window.innerHeight && bounds.bottom > 0;
-        };
+//        $.fn.isOnScreen = function(){
+//            var element = this[0];
+//            var bounds = element.getBoundingClientRect();
+//            return bounds.top < window.innerHeight && bounds.bottom > 0;
+//        };
 //        function showElement() {
 //            if (fired == 0 && $('.count').isOnScreen()) {
 //                fired = 1;

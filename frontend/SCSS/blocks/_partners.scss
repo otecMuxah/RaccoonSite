@@ -3,18 +3,55 @@
     padding: 25px 0;
     width: 100%;
     margin-bottom: 65px;
+    position: relative;
     &__wrapper {
         max-width: 1140px;
-    }
-    &__list {
-        //display: flex;
-        //align-items: center;
-
+        margin: 0 auto;
     }
     &__link {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
     }
-
+    .owl-carousel {
+        .owl-item {
+            img {
+                width: auto;
+            }
+        }
+        .owl-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            .owl-next {
+                position: relative;
+                background: url(../images/arrow.png) no-repeat;
+                width: 13px;
+                height: 20px;
+                text-indent: 0;
+                font-size: 0;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            .owl-prev {
+                width: 13px;
+                height: 20px;
+                text-indent: 0;
+                font-size: 0;
+                background: url(../images/arrow.png) no-repeat;
+                transform: rotate(180deg);
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .disabled {
+            display: none;
+        }
+    }
 }

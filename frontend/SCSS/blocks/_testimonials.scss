@@ -73,18 +73,15 @@
         .center {
             width: 220px;
             height: 220px;
-
             .testimonials__image {
                 width: 220px;
                 height: 220px;
-
                 filter: grayscale(0);
             }
             .testimonials__text-holder {
                 visibility: visible;
-                transition: visibility 0.1s linear 0.3s;
+                transition: visibility 0.1s linear 0.1s;
             }
-
         }
         .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
             display: flex;
