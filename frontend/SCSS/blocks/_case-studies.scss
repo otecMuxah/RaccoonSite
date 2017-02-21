@@ -13,6 +13,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: 100%;
     }
     &__item {
         width: 375px;
@@ -73,6 +74,7 @@
         font: 18px/23px $font_light;
         color: $color-white;
         margin-bottom: 15px;
+        width: 100%;
     }
     &__button {
         color: $color-white;

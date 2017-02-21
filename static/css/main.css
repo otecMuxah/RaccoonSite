@@ -329,43 +329,17 @@ body {
 
 .main-banner {
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 80px);
   background: url("../images/main-banner-bg.jpg") repeat-y;
   z-index: 0;
   position: relative;
   color: #fff;
   padding: 160px 0 0;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  box-sizing: border-box; }
   @media screen and (max-width: 1140px) {
     .main-banner {
       padding: 160px 10px 0;
       box-sizing: border-box; } }
-  .main-banner__outer-wrapper {
-    min-height: 100%;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 65px; }
   .main-banner__wrapper {
     max-width: 1140px;
     margin: 0 auto;
@@ -584,7 +558,10 @@ body {
             align-items: center;
     text-align: center;
     max-width: 360px;
-    margin-left: 33px; }
+    margin-left: 33px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
     @media screen and (max-width: 550px) {
       .facts__item {
         margin: 0 0 35px 33px; } }
@@ -608,7 +585,8 @@ body {
     margin: 0 0 10px -30px; }
   .facts__paragraph {
     font: 16px/21px roboto-light, Arial, sans-serif;
-    margin-left: -33px; }
+    margin-left: -33px;
+    width: 100%; }
 
 .solutions {
   width: 99%;
@@ -637,7 +615,8 @@ body {
     position: relative;
     padding-left: 18px;
     box-sizing: border-box;
-    margin-right: -3px; }
+    margin-right: -3px;
+    overflow: hidden; }
     .solutions__list:after {
       content: '';
       position: absolute;
@@ -687,7 +666,8 @@ body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    width: 100%; }
     .solutions__link:hover .solutions__image--wrapper:after {
       -webkit-transition: -webkit-transform 0.3s linear;
       transition: -webkit-transform 0.3s linear;
@@ -768,7 +748,8 @@ body {
     font: 22px/28px phenomenabold, Arial, sans-serif;
     color: #222;
     text-align: center;
-    display: inline-block; }
+    display: inline-block;
+    width: 100%; }
 
 #education-software {
   width: 60px;
@@ -1100,7 +1081,8 @@ body {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    width: 100%; }
     @media screen and (max-width: 1000px) {
       .why-open-edx__list {
         -ms-flex-pack: distribute;
@@ -1592,7 +1574,8 @@ body {
     .infographic__item--low-row .infographic__header {
       margin-bottom: 10px; }
   .infographic__text {
-    font: 14px roboto-light, Arial, sans-serif; }
+    font: 14px roboto-light, Arial, sans-serif;
+    width: 100%; }
   .infographic__styleline {
     position: absolute;
     border: 1px solid #c7c7c7;
@@ -1708,7 +1691,8 @@ body {
     margin-bottom: 30px; }
   .testimonials__text {
     font: 18px/24px roboto-light, Arial, sans-serif;
-    color: #222; }
+    color: #222;
+    width: 100%; }
   .testimonials .owl-carousel .owl-item {
     height: 220px;
     display: -webkit-box;
@@ -1799,7 +1783,8 @@ body {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    width: 100%; }
   .case-studies__item {
     width: 375px;
     height: 255px;
@@ -1862,7 +1847,8 @@ body {
   .case-studies__text {
     font: 18px/23px roboto-light, Arial, sans-serif;
     color: #fff;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    width: 100%; }
   .case-studies__button {
     color: #fff;
     box-shadow: inset 0 0 0 2px #fff;
