@@ -13,28 +13,28 @@
         box-sizing: border-box;
     }
 
-    &--nomargins {
+    &__nomargins {
         //top: 0;
         //margin-bottom: 0;
     }
-    &__wrapper {
+    &_wrapper {
         max-width: 1140px;
         margin: 0 auto;
 
     }
-    &__inner-wrapper {
+    &_inner-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         font-family: $font_light;
     }
-    &__header {
+    &_header {
         font: 5vw $font_ph;
         color: $color-blue;
         text-transform: uppercase;
         margin-bottom: 12px;
-        &--green {
+        &__green {
             color: $color-green;
         }
         @include width-1140 {
@@ -45,7 +45,7 @@
             line-height: 40px;
         }
     }
-    &__paragraph {
+    &_paragraph {
         font: 3vw $font_light;
         max-width: 690px;
         text-align: center;
@@ -66,7 +66,7 @@
             left: 50%;
             transform: translate(-50%,0);
         }
-        &--small {
+        &__small {
             font: 2vw $font_light;
             padding-bottom: 0;
             margin-bottom: 31px;
@@ -79,7 +79,7 @@
             }
         }
     }
-    &__more {
+    &_more {
         position: absolute;
         bottom: 5vh;
         left: 50%;
@@ -100,7 +100,7 @@
             bottom: 5vh;
         }
     }
-    &__more-image {
+    &_more-image {
         height: 30px;
         width: 24px;
     }

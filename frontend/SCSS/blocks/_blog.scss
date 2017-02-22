@@ -2,14 +2,14 @@
     width: 100%;
     background: $color-almost-white;
     padding-bottom: 70px;
-    &__wrapper {
+    &_wrapper {
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    &__list {
+    &_list {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -19,11 +19,11 @@
             justify-content: space-around;
         }
     }
-    &__item {
+    &_item {
         width: 365px;
         margin-bottom: 20px;
     }
-    &__link {
+    &_link {
         display: flex;
         flex-direction: column;
         background: $color-white;
@@ -31,7 +31,7 @@
         padding:  0 15px 15px;
         box-sizing: border-box;
         &:hover {
-            .blog__button-holder {
+            .blog_button-holder {
                 visibility: visible;
                 background: rgba(0,0,0,0.5);
                 transition: all 0.3s linear;
@@ -39,21 +39,21 @@
 
         }
     }
-    &__header {
+    &_header {
         font: 24px/30px $font_ph_bold;
         color: $color-black;
         padding: 0 15px;
     }
-    &__text {
+    &_text {
         font: 18px/24px $font_light;
         color: $color-gray;
         padding: 0 15px;
     }
-    &__image {
+    &_image {
         height: 255px;
         margin: 0 -15px 15px;
     }
-    &__button-holder {
+    &_button-holder {
         position: absolute;
         top: 0;
         left: 0;
@@ -71,7 +71,7 @@
             transition: all 0.3s linear;
         }
     }
-    &__status {
+    &_status {
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -81,7 +81,7 @@
         margin: 15px -15px 0;
         padding: 10px 15px 0;
     }
-    &__views-image {
+    &_views-image {
         width: 17px;
         height: 12px;
         fill: $color-drk-blue;

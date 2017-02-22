@@ -3,31 +3,31 @@
     background: url("../images/testimonials-bg.jpg") no-repeat 75% 0;
     background-size: cover;
     padding: 80px 0 20px;
-    &__wrapper {
+    &_wrapper {
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    &__item {
+    &_item {
         display: flex;
         flex-direction: column;
         align-items: center;
 
     }
-    &__image {
+    &_image {
         width: 120px;
         height: 120px;
         border-radius: 50%;
         transition: filter 0.3s linear;
         filter: grayscale(1);
     }
-    &__list {
+    &_list {
         display: flex;
         align-items: center;
     }
-    &__text-holder {
+    &_text-holder {
         position: absolute;
         bottom: -13px;
         width: 740px;
@@ -47,17 +47,17 @@
             width: 100%;
         }
     }
-    &__title {
+    &_title {
         font: 22px/28px $font_ph_bold;
         color:  $color-green;
         text-transform: uppercase;
     }
-    &__title-desc {
+    &_title-desc {
         font: 16px/23px $font_light;
         color: #949494;
         margin-bottom: 30px;
     }
-    &__text {
+    &_text {
         font: 18px/24px $font_light;
         color: $color-black;
         width: 100%;
@@ -79,12 +79,12 @@
         .center {
             width: 220px;
             height: 220px;
-            .testimonials__image {
+            .testimonials_image {
                 width: 220px;
                 height: 220px;
                 filter: grayscale(0);
             }
-            .testimonials__text-holder {
+            .testimonials_text-holder {
                 visibility: visible;
                 transition: visibility 0.1s linear 0.1s;
             }

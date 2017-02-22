@@ -4,17 +4,17 @@
     width: 100%;
     position: relative;
     margin-bottom: 65px;
-    &__wrapper {
+    &_wrapper {
         max-width: 1140px;
         margin: 0 auto;
 
     }
-    &__link {
+    &_link {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    &__list {
+    &_list {
         padding: 0 25px;
         box-sizing: border-box;
     }

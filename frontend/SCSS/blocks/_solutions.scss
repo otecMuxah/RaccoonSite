@@ -1,14 +1,14 @@
 .solutions {
     width: 99%;
     margin-bottom: 78px;
-    &__wrapper {
+    &_wrapper {
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    &__list {
+    &_list {
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -37,7 +37,7 @@
             }
         }
     }
-    &__item {
+    &_item {
         width: 170px;
         display: flex;
         align-items: center;
@@ -46,24 +46,24 @@
             margin-bottom: 40px;
         }
     }
-    &__link {
+    &_link {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         width: 100%;
         &:hover {
-            .solutions__image--wrapper {
+            .solutions_image__wrapper {
                 &:after {
                     transition: transform 0.3s linear;
                     transform: translate(-50%,-50%);
                 }
             }
-            .solutions__image svg {
+            .solutions_image svg {
                 width: 66px;
                 height: 66px;
                 transition: all 0.3s linear;
-                &--k12 {
+                &__k12 {
                     height: 33px;
                 }
             }
@@ -73,11 +73,11 @@
             }
         }
     }
-    &__image {
+    &_image {
         transition: height 0.3s linear;
         height: 60px;
         fill: $color-white;
-        &--wrapper {
+        &__wrapper {
             width: 120px;
             height: 120px;
             border-radius: 50%;
@@ -102,11 +102,11 @@
                 background: rgba(0,0,0,0.8) url(../images/zoom-tool.png) no-repeat 50% 25%;
             }
         }
-        &--k12 {
+        &__k12 {
             height: 30px;
         }
     }
-    &__title {
+    &_title {
         font: 700 28px/35px $font_ph_bold;
         color: $color-black;
         position: relative;
@@ -128,7 +128,7 @@
             right: -30px;
         }
     }
-    &__text {
+    &_text {
         font: 22px/28px $font_ph_bold;
         color: $color-black;
         text-align: center;

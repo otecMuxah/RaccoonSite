@@ -1,14 +1,14 @@
 .our-services {
     width: 100%;
     padding: 79px 0 38px;
-    &__wrapper {
+    &_wrapper {
         max-width: 1140px;
         width: 100%;
-        .try-block__title {
+        .try-block_title {
             margin-top: 30px;
         }
     }
-    &__list {
+    &_list {
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -25,7 +25,7 @@
             justify-content: center;
         }
     }
-    &__item {
+    &_item {
         width: 300px;
         &:nth-child(3) {
             position: relative;
@@ -52,19 +52,19 @@
             }
         }
     }
-    &__title {
+    &_title {
         color: $color-white;
     }
-    &__image-wrapper {
+    &_image-wrapper {
         background-color: rgba(255, 255, 255, 0.2);
         border: 2px solid $color-green;
         margin-bottom: 12px;
     }
-    &__image {
+    &_image {
         fill: $color-green;
         width: 60px;
     }
-    &__text {
+    &_text {
         color: $color-white;
         font: 28px/35px $font_ph;
     }

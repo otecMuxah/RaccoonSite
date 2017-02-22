@@ -99,7 +99,7 @@ $hamburger-types: (
         bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
     }
 }
-.hamburger--elastic {
+.hamburger__elastic {
     .hamburger-inner {
         top: $hamburger-layer-height / 2;
         transition-duration: 0.4s;

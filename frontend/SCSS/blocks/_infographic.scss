@@ -5,7 +5,7 @@
     @include width-1140 {
         display: none;
     }
-    &__wrapper {
+    &_wrapper {
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
@@ -13,7 +13,7 @@
         align-items: center;
         position: relative;
     }
-    &__list-holder {
+    &_list-holder {
         position: relative;
         max-width: 1140px;
         width: 100%;
@@ -22,16 +22,16 @@
             content: '';
             position: absolute;
             width: 280px;
-            height: 280px;
+            height: 281px;
             border: 2px solid #c7c7c7;
             border-radius: 50%;
-            top: 217px;
-            left: 12px;
+            top: 216px;
+            left: 17px;
             z-index: 0;
             box-sizing: border-box;
         }
         &:after  {
-            right: 12px;
+            right: 17px;
             left: auto;
             z-index: 0;
             box-sizing: border-box;
@@ -43,7 +43,7 @@
             }
         }
     }
-    &__list {
+    &_list {
         max-width: 860px;
         width: 100%;
         margin: 0 auto;
@@ -60,21 +60,21 @@
             height: auto;
         }
     }
-    &__item{
+    &_item{
         position: relative;
         display: flex;
         justify-content: center;
         flex-basis: 33%;
-        &--low-row {
+        &__low-row {
             flex-basis: 50%;
             align-self: flex-end;
             flex-direction: column;
         }
         &:nth-child(2) {
-            .infographic__header {
+            .infographic_header {
                 color: $color-greener;
             }
-            .infographic__number {
+            .infographic_number {
                 border-color: $color-greener;
                 &:before,
                 &:after {
@@ -83,10 +83,10 @@
             }
         }
         &:nth-child(3) {
-            .infographic__header {
+            .infographic_header {
                 color: $color-green-blue;
             }
-            .infographic__number {
+            .infographic_number {
                 border-color: $color-green-blue;
                 &:before,
                 &:after {
@@ -95,40 +95,40 @@
             }
         }
         &:nth-child(4) {
-            .infographic__header {
+            .infographic_header {
                 color: $color-drk-blue;
             }
-            .infographic__number {
+            .infographic_number {
                 border-color: $color-drk-blue;
                 &:before,
                 &:after {
                     background: $color-drk-blue;
                 }
             }
-            .infographic__holder {
+            .infographic_holder {
                 align-self: flex-end;
                 margin-right: 20px;
             }
         }
         &:nth-child(5) {
-            .infographic__header {
+            .infographic_header {
                 color: $color-mid-blue;
             }
-            .infographic__number {
+            .infographic_number {
                 border-color: $color-mid-blue;
                 &:before,
                 &:after {
                     background: $color-mid-blue;
                 }
             }
-            .infographic__holder {
+            .infographic_holder {
                 align-self: flex-start;
                 margin-left: 20px;
             }
         }
         @include tablet {
             margin-bottom: 20px;
-            &--low-row {
+            &__low-row {
                 flex-basis: 33%;
                 align-self: flex-start;
             }
@@ -136,7 +136,7 @@
 
 
     }
-    &__holder {
+    &_holder {
         width: 265px;
         height: 325px;
         display: flex;
@@ -150,14 +150,14 @@
         &:after {
             content: '';
             position: absolute;
-            left: 0;
-            top: 67%;
+            left: -1px;
+            top: 217px;
             width: 101%;
             border-top: 2px solid $color-beige;
             z-index: 0;
             box-sizing: border-box;
         }
-        .infographic__item--low-row & {
+        .infographic_item__low-row & {
             &:after {
                 top: 33.5%;
             }
@@ -168,7 +168,7 @@
             }
         }
     }
-    &__number {
+    &_number {
         border: 15px solid $color-green;
         width: 61px;
         height: 61px;
@@ -200,7 +200,7 @@
             left: 50%;
             transform: translateX(-50%);
         }
-        .infographic__item--low-row & {
+        .infographic_item__low-row & {
             margin-bottom: 10px;
             margin-top: 60px;
             &:before {
@@ -225,20 +225,20 @@
             }
         }
     }
-    &__header {
+    &_header {
         font: 25px/25px $font_ph_bold;
         color: $color-green;
         margin-bottom: 20px;
         width: 200px;
-        .infographic__item--low-row & {
+        .infographic_item__low-row & {
             margin-bottom: 10px;
         }
     }
-    &__text {
+    &_text {
         font: 14px $font_light;
         width: 100%;
     }
-    &__styleline {
+    &_styleline {
         position: absolute;
         border: 1px solid $color-beige;
         border-top: none;
@@ -268,7 +268,7 @@
             transform: translate(50%,-75%);
         }
     }
-    &__more-styleline {
+    &_more-styleline {
         position: relative;
         width: 100%;
     }

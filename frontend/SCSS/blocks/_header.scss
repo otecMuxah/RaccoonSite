@@ -22,7 +22,7 @@
             display: block;
         }
     }
-    &__wrapper {
+    &_wrapper {
         display: flex;
         margin: 0 auto;
         max-width: 1140px;
@@ -31,34 +31,34 @@
         height: 80px;
         align-items: center;
     }
-    &__logo {
+    &_logo {
         width: 165px;
         height: 50px;
         display: block;
         font-size: 0;
-        .header--fixed & {
+        .header__fixed & {
             display: none;
         }
     }
-    &__logo-super {
+    &_logo-super {
         display: none;
         width: 60px;
         height: 60px;
         background: $color-green;
-        .header--fixed & {
+        .header__fixed & {
             display: block;
         }
     }
-    &--fixed {
+    &__fixed {
         position: fixed;
         background: $color-white;
         color: $color-black;
         z-index: 10;
         transition: color 0.5s linear;
-        .header__wrapper {
+        .header_wrapper {
             height: 60px;
         }
-        .header-nav__item--dropdown .header-nav__link:after {
+        .header-nav_item__dropdown .header-nav_link:after {
             border-color: #222 transparent transparent;
             @include tablet {
                 border-color: #fff transparent transparent;
