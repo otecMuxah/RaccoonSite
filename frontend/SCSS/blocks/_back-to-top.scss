@@ -1,0 +1,22 @@
+.back-to-top {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background: $color-drk-blue;
+    border-radius: 50%;
+    cursor: pointer;
+    font: 16px $font_ph_bold;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.25);
+    &__image {
+        height: 22px;
+        margin-top: -3px;
+        transform: rotate(180deg);
+    }
+}

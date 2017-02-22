@@ -1,7 +1,7 @@
 .infographic {
     width: 100%;
     background: $color-almost-white;
-    padding: 60px 0 85px;
+    padding: 77px 0 85px;
     &__wrapper {
         max-width: 1140px;
         margin: 0 auto;
@@ -20,9 +20,9 @@
             position: absolute;
             width: 280px;
             height: 280px;
-            border: 4px dashed #c7c7c7;
+            border: 2px solid #c7c7c7;
             border-radius: 50%;
-            top: 218px;
+            top: 217px;
             left: 12px;
             z-index: 0;
             box-sizing: border-box;
@@ -65,6 +65,7 @@
         &--low-row {
             flex-basis: 50%;
             align-self: flex-end;
+            flex-direction: column;
         }
         &:nth-child(2) {
             .infographic__header {
@@ -101,6 +102,10 @@
                     background: $color-drk-blue;
                 }
             }
+            .infographic__holder {
+                align-self: flex-end;
+                margin-right: 20px;
+            }
         }
         &:nth-child(5) {
             .infographic__header {
@@ -112,6 +117,10 @@
                 &:after {
                     background: $color-mid-blue;
                 }
+            }
+            .infographic__holder {
+                align-self: flex-start;
+                margin-left: 20px;
             }
         }
         @include tablet {
@@ -140,8 +149,8 @@
             position: absolute;
             left: 0;
             top: 67%;
-            width: 100%;
-            border: 2px dashed $color-beige;
+            width: 101%;
+            border-top: 2px solid $color-beige;
             z-index: 0;
             box-sizing: border-box;
         }

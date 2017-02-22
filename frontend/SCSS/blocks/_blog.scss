@@ -35,6 +35,7 @@
                 background: rgba(0,0,0,0.5);
                 transition: all 0.3s linear;
             }
+
         }
     }
     &__header {
@@ -63,6 +64,11 @@
         align-items: center;
         background: rgba(0,0,0,0);
         transition: all 0.3s linear;
+        @include tablet {
+            visibility: visible;
+            background: rgba(0,0,0,0.5);
+            transition: all 0.3s linear;
+        }
     }
     &__status {
         display: flex;

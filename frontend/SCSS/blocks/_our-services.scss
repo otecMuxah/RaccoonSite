@@ -1,5 +1,6 @@
 .our-services {
     width: 100%;
+    padding: 79px 0 38px;
     &__wrapper {
         max-width: 1140px;
         width: 100%;
@@ -13,6 +14,9 @@
             display: none;
         }
         margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 67px;
+        }
         @include phone {
             flex-wrap: wrap;
             justify-content: center;
@@ -51,6 +55,7 @@
     &__image-wrapper {
         background-color: rgba(255, 255, 255, 0.2);
         border: 2px solid $color-green;
+        margin-bottom: 12px;
     }
     &__image {
         fill: $color-green;
@@ -58,6 +63,6 @@
     }
     &__text {
         color: $color-white;
-        font: 28px/35px $font_ph_light;
+        font: 28px/35px $font_ph;
     }
 }

@@ -1,11 +1,5 @@
 
 @font-face {
-    font-family: 'phenomenalight';
-    src: url('../fonts/phenomena-light.woff') format('woff'), url('../fonts/phenomena-light.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'phenomenabold';
     src: url('../fonts/Phenomena-Bold.woff') format('woff'), url('../fonts/Phenomena-Bold.woff2') format('woff2');
     font-weight: normal;
@@ -25,8 +19,9 @@
 }
 
 //break points
-$res_550:  550px;
-$res_800:  800px;
+$res_550:   550px;
+$res_760:   770px;
+$res_800:   800px;
 $res_1000:  1000px;
 $res_1140:  1140px;
 
@@ -49,12 +44,8 @@ $color-gray:            #949494;
 
 
 //fonts
-$font:            roboto-regular, Arial, sans-serif;
 $font_light:      roboto-light, Arial, sans-serif;
-$font_bold:       roboto-bold, Arial, sans-serif;
-$font_thin:       roboto-thin, Arial, sans-serif;
 $font_ph:         phenomenaregular, Arial, sans-serif;
-$font_ph_light:   phenomenalight, Arial, sans-serif;
 $font_ph_bold:    phenomenabold, Arial, sans-serif;
 
 

@@ -14,6 +14,9 @@
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
+        @include width-1140 {
+            justify-content: space-around;
+        }
     }
     &__item {
         width: 375px;
@@ -21,7 +24,7 @@
         background: url(../images/case-image.jpg) no-repeat;
         background-size: cover;
         margin-bottom: 5px;
-        @include phone {
+        @include width-760 {
             width: 100%;
         }
     }
@@ -41,6 +44,20 @@
             .case-studies__button {
                 visibility: visible;
 
+            }
+        }
+        @include tablet {
+            background: rgba(0,0,0,0.5);
+            .case-studies__in-wrapper {
+                transform: translateY(0%);
+                transition: all 0.3s linear;
+            }
+            .case-studies__text {
+                visibility: visible;
+                transition: all 0.3s linear;
+            }
+            .case-studies__button {
+                visibility: visible;
             }
         }
     }

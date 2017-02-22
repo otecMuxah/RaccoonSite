@@ -48,14 +48,29 @@
             visibility: hidden;
             background: $color-green;
         }
-        &:hover {
+        //&:hover {
+        //    &:before {
+        //        visibility: visible;
+        //    }
+        //    .header-nav__drop-wrapper {
+        //        display: block;
+        //    }
+        //    @include tablet {
+        //        &:before {
+        //            visibility: hidden;
+        //        }
+        //        .header-nav__drop-wrapper {
+        //            display: none;
+        //        }
+        //    }
+        //}
+        &--active {
             &:before {
                 visibility: visible;
             }
             .header-nav__drop-wrapper {
                 display: block;
             }
-
         }
     }
     &__drop-wrapper {
@@ -68,6 +83,7 @@
         min-width: 100%;
     }
     &__drop-list {
+        box-shadow: 0 4px 14.45px 2.55px rgba(0, 0, 2, 0.2);
         background: $color-drk-blue;
         display: flex;
         flex-direction: column;
@@ -105,7 +121,7 @@
     }
     &__drop-link {
         color: $color-white;
-        font: 12px/17px $font;
+        font: 12px/17px $font_light;
         text-transform: uppercase;
         white-space: nowrap;
         @include tablet {

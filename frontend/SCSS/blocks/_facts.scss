@@ -34,6 +34,9 @@
         max-width: 360px;
         margin-left: 33px;
         flex: 1;
+        @include tablet {
+            margin-left: 0;
+        }
         @include phone {
             margin: 0 0 35px 33px;
         }
@@ -66,5 +69,8 @@
         font: 16px/21px $font_light;
         margin-left: -33px;
         width: 100%;
+        @include tablet {
+            margin-left: 0;
+        }
     }
 }

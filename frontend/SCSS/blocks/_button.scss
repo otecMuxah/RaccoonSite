@@ -10,5 +10,10 @@
         color: $color-white;
         background: $color-green;
         transition: all 0.2s linear;
+        @include tablet {
+            color: $color-green;
+            box-shadow: inset 0 0 0 2px $color-green;
+            background: none;
+        }
     }
 }

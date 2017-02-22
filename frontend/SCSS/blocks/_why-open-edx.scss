@@ -1,6 +1,7 @@
 .why-open-edx {
     width: 100%;
     background: $color-almost-white;
+    padding: 70px 0;
     &__wrapper {
         max-width: 1140px;
         margin: 0 auto;
@@ -43,10 +44,33 @@
         position: relative;
         background: #fff;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 12px;
         overflow: hidden;
         @include phone {
             width: 100%;
+        }
+        @include tablet {
+            .why-open-edx__item-wrapper {
+                transform: translateX(99%);
+                transition: transform 0.3s linear;
+            }
+            .why-open-edx__text-wrapper {
+                color: $color-black;
+                transition: color 0.3s linear 0.3s;
+                .why-open-edx__image {
+                    fill: $color-green;
+                    transition: fill 0.3s linear 0.3s;
+                }
+                .why-open-edx__name {
+                    color: $color-black;
+                    transition: color 0.3s linear 0.3s;
+                }
+
+            }
+            .why-open-edx__image {
+                fill: $color-black;
+                transition: fill 0.3s linear 0.3s;
+            }
         }
         &:hover {
             .why-open-edx__item-wrapper {

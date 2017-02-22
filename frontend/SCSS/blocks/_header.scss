@@ -7,6 +7,21 @@
     color: $color-white;
     top: 0;
     left: 0;
+    .hamburger {
+        display: none;
+    }
+    @include desktop {
+        padding: 0 15px;
+        box-sizing: border-box;
+        .button {
+            display: none;
+        }
+    }
+    @include tablet {
+        .hamburger {
+            display: block;
+        }
+    }
     &__wrapper {
         display: flex;
         margin: 0 auto;
@@ -44,19 +59,5 @@
             height: 60px;
         }
     }
-    .hamburger {
-        display: none;
-    }
-    @include desktop {
-        padding: 0 15px;
-        box-sizing: border-box;
-        .button {
-            display: none;
-        }
-    }
-    @include tablet {
-        .hamburger {
-            display: block;
-        }
-    }
+
 }

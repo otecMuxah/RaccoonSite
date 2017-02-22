@@ -5,7 +5,7 @@
     z-index: 0;
     position: relative;
     color: $color-white;
-    padding: 160px 0 0;
+    padding: 8% 0 0;
     box-sizing: border-box;
 
     @include width-1140 {
@@ -20,6 +20,9 @@
     &__wrapper {
         max-width: 1140px;
         margin: 0 auto;
+
+    }
+    &__inner-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -27,7 +30,7 @@
         font-family: $font_light;
     }
     &__header {
-        font: 86px/100px $font_ph;
+        font: 5vw $font_ph;
         color: $color-blue;
         text-transform: uppercase;
         margin-bottom: 12px;
@@ -38,12 +41,12 @@
             text-align: center;
         }
         @include phone {
-            font-size: 32px;
+            font-size: 9vw;
             line-height: 40px;
         }
     }
     &__paragraph {
-        font: 36px/43px $font_light;
+        font: 3vw $font_light;
         max-width: 690px;
         text-align: center;
         position: relative;
@@ -64,7 +67,7 @@
             transform: translate(-50%,0);
         }
         &--small {
-            font: 20px/25px $font_light;
+            font: 2vw $font_light;
             padding-bottom: 0;
             margin-bottom: 31px;
             @include phone {
@@ -78,7 +81,7 @@
     }
     &__more {
         position: absolute;
-        bottom: 7vh;
+        bottom: 5vh;
         left: 50%;
         transform: translate(-50%,0);
         text-align: center;
@@ -87,26 +90,19 @@
         color: #fff;
         cursor: pointer;
         opacity: 1;
+        display: none;
+        padding: 20px;
         //transition: opacity .6s ease;
-        @include phone {
-            bottom: 10vh;
-        }
-        &:after {
-            content: '';
-            margin: 0 auto;
+        @include tablet {
             display: block;
-            left: 0;
-            right: 0;
-            position: relative;
-            bottom: 0;
-            width: 18px;
-            height: 18px;
-            border-right: 3px solid #fff;
-            border-bottom: 3px solid #fff;
-            transform: rotate(45deg);
-            animation: more-arrow .8s infinite linear
         }
-
+        @include phone {
+            bottom: 5vh;
+        }
+    }
+    &__more-image {
+        height: 30px;
+        width: 24px;
     }
 }
 @keyframes more-arrow {
