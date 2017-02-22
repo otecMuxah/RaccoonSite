@@ -814,6 +814,9 @@
             </a>
             <ul class="header-nav">
                 <li class="header-nav__item"><a href="#" class="header-nav__link">ABOUT US</a></li>
+
+                <!-- To add <ul class="header-nav__drop-list"> , add class .header-nav__item--dropdown to appropriate header-nav__item-->
+
                 <li class="header-nav__item header-nav__item--dropdown"><a href="#" class="header-nav__link">OPEN edX
                     SERVICES</a>
                     <div class="header-nav__drop-wrapper">
@@ -1445,6 +1448,7 @@
                     </div>
                 </li>
             </ul>
+            <a href="#" class="button button--black">Load more</a>
         </div>
     </section>
     <section class="blog">
@@ -1542,6 +1546,7 @@
                     </div>
                 </li>
             </ul>
+            <a href="#" class="button button--black">Load more</a>
         </div>
     </section>
     <section class="try-block">
@@ -1636,16 +1641,18 @@
                 }
             }
         });
+
         $('.main-banner__wrapper.owl-carousel').owlCarousel({
             items: 1,
             nav: false,
             loop: true,
-            autoplay: true,
+            autoplay: true
+        });
 
-        })
         $headNavDrop.on('touchstart mouseenter', function () {
             $(this).closest('.header-nav__item').addClass('header-nav__item--active');
         });
+
         $headNavDrop.on('touchmove  mouseleave', function () {
             $(this).closest('.header-nav__item').removeClass('header-nav__item--active');
         });
@@ -1654,16 +1661,19 @@
             $(this).toggleClass('is-active');
             $('.header-nav').toggleClass('header-nav__visible');
         });
+
         $mainBannerMore.on('click', function () {
             $('.partners').velocity("scroll", {
                 offset: -60
             });
         });
+
         $toTopButton.on('click', function () {
             $mainBanner.velocity('scroll', {
 
             })
-        })
+        });
+
         $.fn.isOnScreen = function () {
             var element = this[0];
             var bounds = element.getBoundingClientRect();
@@ -1671,9 +1681,10 @@
         };
 
         function showElement() {
-            if (fired == 0 && $('.count').isOnScreen()) {
+            var $count = $('.count');
+            if (fired == 0 && $count.isOnScreen()) {
                 fired = 1;
-                $('.count').each(function () {
+                $count.each(function () {
                     $(this).prop('Counter', 0).animate({
                         Counter: $(this).text()
                     }, {

@@ -98,7 +98,7 @@
             left: 50%;
             transform: translateX(-50%);
             width: 300px;
-            overflow: hidden;
+            height: 0;
             display: flex;
             justify-content: space-between;
             .owl-next {

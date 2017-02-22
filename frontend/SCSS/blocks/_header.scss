@@ -58,6 +58,12 @@
         .header__wrapper {
             height: 60px;
         }
+        .header-nav__item--dropdown .header-nav__link:after {
+            border-color: #222 transparent transparent;
+            @include tablet {
+                border-color: #fff transparent transparent;
+            }
+        }
     }
 
 }

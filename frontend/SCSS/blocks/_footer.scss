@@ -1,6 +1,7 @@
 .footer {
     width: 100%;
     background: $color-almost-white;
+    padding: 41px 0;
     &__wrapper {
         max-width: 1140px;
         margin: 0 auto;
@@ -14,12 +15,16 @@
         text-transform: uppercase;
         color: $color-black;
     }
+    &__email {
+        margin-bottom: 26px;
+    }
     &__social-list {
         display: flex;
         width: 190px;
         justify-content: space-between;
         position: relative;
         z-index: 1;
+        margin-bottom: 30px;
     }
     &__social-link {
         width: 50px;
