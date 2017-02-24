@@ -25,4 +25,13 @@
             background: $color-black;
         }
     }
+    &__white {
+        color: $color-white;
+        box-shadow: inset 0 0 0 2px $color-white;
+        padding: 7px 32px;
+        &:hover {
+            color: $color-drk-blue;
+            background: $color-white;
+        }
+    }
 }

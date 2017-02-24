@@ -1,6 +1,17 @@
 .solutions {
     width: 99%;
     margin-bottom: 78px;
+    &__biedge-bg {
+        background: $color-almost-white;
+        margin-bottom: 0;
+        padding: 80px 0;
+        width: 100%;
+        .solutions_image__wrapper {
+            &:after {
+                display: none;
+            }
+        }
+    }
     &_wrapper {
         max-width: 1140px;
         margin: 0 auto;
@@ -13,9 +24,9 @@
         width: 100%;
         justify-content: space-between;
         position: relative;
-        padding-left: 18px;
+        //padding-left: 18px;
         box-sizing: border-box;
-        margin-right: -3px;
+        //margin-right: -3px;
         overflow: hidden;
         &:after {
             content: '';

@@ -135,3 +135,21 @@ $hamburger-types: (
         }
     }
 }
+.hamburger__white {
+    .hamburger-inner {
+        &,
+        &::before,
+        &::after {
+            background-color: $color-white;
+        }
+    }
+    .header__fixed & {
+        .hamburger-inner {
+            &,
+            &::before,
+            &::after {
+                background-color: $color-green;
+            }
+        }
+    }
+}

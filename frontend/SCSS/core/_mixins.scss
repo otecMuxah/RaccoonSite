@@ -48,3 +48,8 @@
     @content;
   }
 }
+@mixin small-phone {
+  @media screen and (max-width: $res_360) {
+    @content;
+  }
+}
