@@ -1,7 +1,8 @@
 .solutions-banner {
     background: $color-drk-blue;
     padding-top: 90px;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     .main-banner_header {
         font-size: 3vw;
         color: $color-white;
