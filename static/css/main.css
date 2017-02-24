@@ -253,11 +253,12 @@ body {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
       height: 3px;
-      width: 100%;
-      visibility: hidden;
-      background: #72bb25; }
+      width: 0;
+      background: #72bb25;
+      -webkit-transition: width 0.2s linear;
+      transition: width 0.2s linear; }
     .header-nav_item__active:before {
-      visibility: visible; }
+      width: 100%; }
     .header-nav_item__active .header-nav_drop-wrapper {
       display: block; }
   .header-nav_drop-wrapper {
@@ -1414,13 +1415,13 @@ body {
         position: absolute;
         height: 2px;
         background: #72bb25;
-        width: 298px;
-        top: 28%;
-        left: -1px;
+        width: 259px;
+        top: 30%;
+        left: 52px;
         -webkit-transform: translate(-70%, 0);
                 transform: translate(-70%, 0); }
       .our-services_item:nth-child(3):after {
-        left: -417px;
+        left: -326px;
         -webkit-transform: translate(-71%, 0);
                 transform: translate(-71%, 0); }
     @media screen and (max-width: 1140px) {
