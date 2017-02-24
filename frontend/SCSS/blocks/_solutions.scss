@@ -36,12 +36,18 @@
                 display: none;
             }
         }
+        &__small {
+            &:after {
+                width: 70%;
+            }
+        }
     }
     &_item {
         width: 170px;
         display: flex;
         align-items: center;
         flex-direction: column;
+        flex: 1;
         @include tablet {
             margin-bottom: 40px;
         }
@@ -76,6 +82,7 @@
     &_image {
         transition: height 0.3s linear;
         height: 60px;
+        width: 60px;
         fill: $color-white;
         &__wrapper {
             width: 120px;

@@ -1,0 +1,40 @@
+.pricing-banner {
+    background: $color-drk-blue;
+    .main-banner_header {
+        font-size: 4vw;
+        color: $color-white;
+    }
+    .main-banner_paragraph {
+        font-size: 2vw;
+        text-align: left;
+        &:after {
+            display: none;
+        }
+    }
+    &__inner-holder {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__image {
+        background: url(../images/pricing-image.png) no-repeat;
+        width: 325px;
+        height: 309px;
+        display: block;
+        position: relative;
+        flex-shrink: 0;
+        &:after {
+            content: '';
+            position: absolute;
+            left:50%;
+            top:50%;
+            width: 150%;
+            height: 150%;
+            border-radius: 50%;
+            background: #859ad4;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+        }
+    }
+
+}
