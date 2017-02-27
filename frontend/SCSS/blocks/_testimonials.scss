@@ -75,6 +75,32 @@
         }
         .owl-stage-outer {
             min-height: 500px;
+            &:after {
+                content: '';
+                width: 22%;
+                height: 1px;
+                background: #72bb25;
+                position: absolute;
+                left: 170px;
+                top: 114px;
+                z-index: -1;
+                @include width-1140 {
+                    display: none;
+                }
+            }
+            &:before {
+                content: '';
+                width: 22%;
+                height: 1px;
+                background: #72bb25;
+                position: absolute;
+                right: 170px;
+                top: 114px;
+                z-index: -1;
+                @include width-1140 {
+                    display: none;
+                }
+            }
         }
         .center {
             width: 220px;

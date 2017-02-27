@@ -17,6 +17,7 @@
         font: 16px $font_ph_bold;
         color: $color-gary-2;
         text-transform: uppercase;
+        transition: color 0.2s linear;
         &:after {
             content: '';
             width: 0;
