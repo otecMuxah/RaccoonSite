@@ -293,9 +293,13 @@ body {
       transition: width 0.2s linear; }
     .header-nav_item__active:before {
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 100%;
       -webkit-transition: width 0.2s linear;
       transition: width 0.2s linear; }
+=======
+      width: 100%; }
+>>>>>>> origin/master
 =======
       width: 100%; }
 >>>>>>> origin/master
