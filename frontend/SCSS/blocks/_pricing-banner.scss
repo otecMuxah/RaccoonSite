@@ -1,12 +1,15 @@
 .pricing-banner {
     background: $color-drk-blue;
+    padding-top: 100px;
+    height: auto;
     .main-banner_header {
         font-size: 4vw;
         color: $color-white;
     }
     .main-banner_paragraph {
         font-size: 2vw;
-        text-align: left;
+        text-align: center;
+        max-width: 100%;
         &:after {
             display: none;
         }

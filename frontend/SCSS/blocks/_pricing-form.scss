@@ -1,18 +1,37 @@
 .pricing-form {
     width: 100%;
     background: $color-almost-white;
+    padding: 60px 0;
     &__wrapper {
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     &__list {
         width: 100%;
+        max-width: 840px;
         display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
     }
     &__item {
-
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translate(0,-50%);
+            right: -76px;
+            height: 1px;
+            background: $color-drk-blue;
+            width: 52px;
+            z-index: 4;
+        }
+        &:last-child:before {
+            display: none;
+        }
     }
     &__link {
         font: 24px $font_ph_bold;
@@ -21,8 +40,12 @@
         background: $color-white;
         display: flex;
         align-items: center;
+        justify-content: center;
+        width: 245px;
+        box-sizing: border-box;
         position: relative;
-        margin-right: 40px;
+        padding: 0 20px;
+        text-transform: uppercase;
         &:after {
             content: '';
             width: 0;
@@ -36,8 +59,9 @@
             transform: rotate(360deg);
             z-index: 2;
         }
+
         .pricing-form__item:not(:first-child) & {
-            padding-left: 20px;
+            padding-left: 50px;
             margin-left: -8px;
             &:before {
                 content: '';
@@ -53,5 +77,72 @@
                 z-index: 1;
             }
         }
+        .pricing-form__item--active & {
+            background: $color-drk-blue;
+            color: $color-white;
+            &:after {
+                border-color: transparent transparent transparent $color-drk-blue;
+            }
+            .pricing-form__image {
+                fill: $color-white;
+            }
+        }
+    }
+    &__image {
+        fill: $color-gary-2;
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
+    &__form-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 555px;
+    }
+    &__form-item {
+
+    }
+    &__fistLastName {
+        display: flex;
+        justify-content: space-between;
+        .pricing-form__label {
+            flex-basis: 48%;
+        }
+
+    }
+    &__label {
+        display: flex;
+        flex-direction: column;
+        font: 12px $font_light;
+        color: $color-black;
+        margin-bottom: 15px;
+    }
+
+    &__input,
+    &__textarea {
+        display: block;
+        margin: 0;
+        width: 100%;
+        appearance: none;
+        box-shadow: none;
+        border-radius: 5px;
+        border: 1px $color-gary-2 solid;
+        height: 40px;
+        font: 24px $font_light;
+        box-sizing: border-box;
+        padding: 0 10px;
+        color: $color-black;
+    }
+    &__textarea {
+        width: 100%;
+        box-sizing: border-box;
+        height: 120px;
+
+    }
+    &__buttons-holder {
+        width: 215px;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
     }
 }

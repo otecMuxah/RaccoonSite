@@ -34,4 +34,44 @@
             background: $color-white;
         }
     }
+    &__next,
+    &__back {
+        position: relative;
+        padding: 7px 37px 7px 23px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translate(0,-50%);
+            right: 25px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6px 0 6px 8px;
+            border-color: transparent transparent transparent $color-black;
+            transition: border-color 0.2s linear;
+        }
+        &:hover {
+            &:before {
+                border-color: transparent transparent transparent $color-white;
+                transition: border-color 0.2s linear;
+            }
+        }
+    }
+    &__back {
+        padding: 7px 23px 7px 37px;
+        &:before{
+            right: auto;
+            left: 25px;
+            border-width: 6px 8px 6px 0;
+            border-color: transparent $color-black transparent transparent;
+            transition: border-color 0.2s linear;
+        }
+        &:hover {
+            &:before {
+                border-color: transparent $color-white transparent transparent;
+                transition: border-color 0.2s linear;
+            }
+        }
+    }
 }
