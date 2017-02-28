@@ -74,7 +74,8 @@ $(document).ready(function () {
     $headNavDrop.on('touchmove  mouseleave', function () {
         $(this).closest('.header-nav_item').removeClass('header-nav_item__active');
     });
-    $headNavDropdown.on('click', function () {
+    $headNavDropdown.on('click', function (e) {
+        e.preventDefault();
         $(this).closest('.header-nav_item').toggleClass('header-nav_item__show-dropdown')
     })
     $hamburger.on('click', function () {
@@ -127,7 +128,7 @@ $(document).ready(function () {
     }));
 
     var callbackScroll = function () {
-        if ($window.scrollTop() > $window.height() - 160) {
+        if ($window.scrollTop() > $mainBanner.height()) {
             whiteHeader = 1;
             $header.addClass('header__fixed');
             $mainBannerMore.addClass('hidden');

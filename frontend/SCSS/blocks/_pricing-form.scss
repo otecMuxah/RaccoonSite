@@ -15,6 +15,9 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 25px;
+        @include tablet {
+            flex-direction: column;
+        }
     }
     &_item {
         position: relative;
@@ -31,6 +34,26 @@
         }
         &:last-child:before {
             display: none;
+        }
+        @include width-1140 {
+            &:before {
+                display: none;
+            }
+        }
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            &:first-child {
+                justify-content: flex-start;
+            }
+            &:last-child {
+                justify-content: flex-end;
+                .pricing-form_link {
+
+                }
+            }
+
         }
     }
     &_link {
@@ -59,7 +82,13 @@
             transform: rotate(360deg);
             z-index: 2;
         }
-
+        @include tablet {
+            width: 100%;
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
         .pricing-form_item:not(:first-child) & {
             padding-left: 50px;
             margin-left: -8px;
@@ -75,6 +104,10 @@
                 left: 0;
                 transform: rotate(360deg);
                 z-index: 1;
+            }
+            @include tablet {
+                margin-left: 0;
+                padding: 0;
             }
         }
         .pricing-form_item__active & {
@@ -98,6 +131,11 @@
         display: flex;
         flex-direction: column;
         width: 555px;
+        @include tablet {
+            width: 100%;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
     }
     &_form-item {
 
@@ -107,8 +145,14 @@
         justify-content: space-between;
         .pricing-form_label {
             flex-basis: 48%;
-        }
 
+        }
+        @include tablet {
+            flex-wrap: wrap;
+            .pricing-form_label {
+                flex-basis: 100%;
+            }
+        }
     }
     &_label {
         display: flex;
@@ -128,7 +172,7 @@
         border-radius: 5px;
         border: 1px $color-gary-2 solid;
         height: 40px;
-        font: 24px $font_light;
+        font: 18px $font_light;
         box-sizing: border-box;
         padding: 0 10px;
         color: $color-black;
@@ -144,5 +188,19 @@
         display: flex;
         justify-content: space-between;
         align-self: center;
+    }
+    &_text {
+        font: 700 12px $font_light;
+    }
+    &_redmark {
+        color: red;
+    }
+    &_message {
+        font: 14px $font_light;
+        color: $color-gray;
+        margin-bottom: 30px;
+        a {
+            color: $color-gary-2;
+        }
     }
 }

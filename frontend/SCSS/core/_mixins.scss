@@ -33,6 +33,11 @@
         @content;
     }
 }
+@mixin width801 {
+    @media screen and (max-width: $res_801) {
+        @content;
+    }
+}
 @mixin tablet {
   @media screen and (max-width: $res_800) {
     @content;

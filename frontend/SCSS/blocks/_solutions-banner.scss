@@ -21,6 +21,7 @@
         }
         @include tablet {
             font-size: 16px;
+            line-height: 21px;
         }
     }
     &_inner-holder {
@@ -29,6 +30,8 @@
         width: 100%;
         @include phone {
             flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
         }
 
     }
@@ -62,5 +65,9 @@
                 display: none;
             }
         }
+        @include phone {
+            margin: 0 0 20px;
+        }
+
     }
 }

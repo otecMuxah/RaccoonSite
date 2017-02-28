@@ -35,6 +35,7 @@
         justify-content: center;
         border-radius: 50%;
         background: $color-dark-blue;
+        transition: all 0.2s linear;
         &:last-child {
             &:after {
                 content: '';
@@ -47,9 +48,18 @@
                 z-index: -1;
             }
         }
+        &:hover {
+            background: $color-white;
+            transition: all 0.2s linear;
+            .footer_social-image {
+                fill: $color-drk-blue;
+                transition: all 0.2s linear;
+            }
+        }
     }
     &_social-image {
         height: 22px;
         fill: $color-white;
+        transition: all 0.2s linear;
     }
 }

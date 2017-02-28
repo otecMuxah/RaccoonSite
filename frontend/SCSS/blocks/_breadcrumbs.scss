@@ -23,12 +23,11 @@
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 11px 0 11px 11px;;
+            border-width: 11px 0 11px 11.5px;
             border-color: transparent transparent transparent $color-white;
             position: absolute;
             top: 0;
             right: -11px;
-            transform: rotate(360deg);
             z-index: 2;
         }
         .breadcrumbs_item:not(:first-child) & {

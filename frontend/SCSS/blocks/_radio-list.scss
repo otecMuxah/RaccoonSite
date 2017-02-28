@@ -6,7 +6,7 @@
         border-radius: 5px;
         padding: 15px 0;
         position: relative;
-        margin-top: 20px;
+        margin: 20px 0;
     }
     &_inner-wrapper {
         display: flex;
@@ -14,7 +14,7 @@
         justify-content: space-around;
     }
     &_title {
-        font: 12px $font_light;
+        font: 700 12px $font_light;
         position: absolute;
         left: 0;
         top: -20px;

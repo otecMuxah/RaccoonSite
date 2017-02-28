@@ -72,6 +72,7 @@
         transform: translateY(13%);
         padding: 15px;
         box-sizing: border-box;
+        transition: transform 0.3s linear;
     }
     &_header {
         font: 24px/30px $font_ph_bold;

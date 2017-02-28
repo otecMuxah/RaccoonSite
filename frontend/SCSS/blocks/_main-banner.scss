@@ -1,12 +1,14 @@
 .main-banner {
     width: 100%;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
+    height: 100%;
     background: url("../images/main-banner-bg.jpg") repeat-y;
     z-index: 0;
     position: relative;
     color: $color-white;
     padding: 8% 0 0;
     box-sizing: border-box;
+    transform: translate3d(0,0,0);
 
     @include width-1140 {
         padding: 160px 10px 0;
@@ -31,7 +33,7 @@
     }
     &_header {
         font: 5vw $font_ph;
-        color: $color-blue;
+        color: $color-drk-blue;
         text-transform: uppercase;
         margin-bottom: 12px;
         &__green {
@@ -46,7 +48,7 @@
         }
     }
     &_paragraph {
-        font: 3vw $font_light;
+        font: 2vw $font_light;
         max-width: 690px;
         text-align: center;
         position: relative;
@@ -67,7 +69,7 @@
             transform: translate(-50%,0);
         }
         &__small {
-            font: 2vw $font_light;
+            font: 1.5vw $font_light;
             padding-bottom: 0;
             margin-bottom: 31px;
             @include phone {

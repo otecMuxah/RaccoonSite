@@ -42,7 +42,7 @@
             content: '';
             position: absolute;
             top: 50%;
-            transform: translate(0,-50%);
+            transform: translate(0, -50%);
             right: 25px;
             width: 0;
             height: 0;
@@ -60,7 +60,7 @@
     }
     &__back {
         padding: 7px 23px 7px 37px;
-        &:before{
+        &:before {
             right: auto;
             left: 25px;
             border-width: 6px 8px 6px 0;

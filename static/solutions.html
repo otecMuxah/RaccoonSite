@@ -435,7 +435,7 @@
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#big-logo"></use>
             </svg>
         </a>
-        <a href="#" class="header_logo-super">
+        <a href="index.html" class="header_logo-super">
             <svg version="1.1" id="raccoon-logo" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="100px" height="100px" viewBox="0 0 80.957 80">
@@ -560,9 +560,9 @@
                 </div>
 
             </li>
-            <li class="header-nav_item"><a href="" class="header-nav_link">SOLUTIONS</a></li>
+            <li class="header-nav_item"><a href="solutions.html" class="header-nav_link">SOLUTIONS</a></li>
             <li class="header-nav_item"><a href="" class="header-nav_link">RACCOON UNIVERSITY</a></li>
-            <li class="header-nav_item"><a href="" class="header-nav_link">PRICING</a></li>
+            <li class="header-nav_item"><a href="pricing.html" class="header-nav_link">PRICING</a></li>
             <li class="header-nav_item"><a href="" class="header-nav_link">BLOG</a></li>
             <li class="header-nav_item"><a href="" class="header-nav_link">CONTACT US</a></li>
         </ul>
@@ -744,80 +744,6 @@
 
 <script type="text/javascript" src="script/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="script/jquery.ba-throttle-debounce.min.js"></script>
-<script>
-    $(document).ready(function () {
-        var fired = 0,
-            whiteHeader = 0;
-
-        const
-            tabletScreenWidth = 800,
-            $hamburger = $('.hamburger'),
-            $headNav = $('.header-nav'),
-            $header = $('.header'),
-            $mainBannerMore = $('.main-banner_more'),
-            $mainBanner = $('.main-banner'),
-            $window = $(window),
-            $headNavDrop = $('.header-nav_item'),
-            $toTopButton = $('.back-to-top'),
-            $bredcrumbLink = $('.breadcrumbs_link');
-
-        $headNavDrop.on('touchstart mouseenter', function () {
-            $(this).closest('.header-nav_item').addClass('header-nav_item__active');
-        });
-
-        $headNavDrop.on('touchmove  mouseleave', function () {
-            $(this).closest('.header-nav_item').removeClass('header-nav_item__active');
-        });
-
-//        $bredcrumbLink.on('touchstart mouseenter', function () {
-//            $(this).closest('.breadcrumbs_item').addClass('breadcrumbs_item__active');
-//        });
-//
-//        $bredcrumbLink.on('touchmove  mouseleave', function () {
-//            $(this).closest('.breadcrumbs_item').removeClass('breadcrumbs_item__active');
-//        });
-
-        $hamburger.on('click', function () {
-            $(this).toggleClass('is-active');
-            $('.header-nav').toggleClass('header-nav_visible');
-        });
-
-        $mainBannerMore.on('click', function () {
-            $('.partners').velocity("scroll", {
-                offset: -60
-            });
-        });
-
-        $toTopButton.on('click', function () {
-            $mainBanner.velocity('scroll', {
-
-            })
-        });
-
-        $window.resize($.throttle(250, function () {
-            var viewportWidth = $(window).width();
-            if (viewportWidth > tabletScreenWidth) {
-                $hamburger.removeClass('is-active');
-                $headNav.removeClass('header-nav_visible');
-            }
-        }));
-
-        var callbackScroll = function () {
-            if ($window.scrollTop() > $window.height() - 160) {
-                whiteHeader = 1;
-                $header.addClass('header__fixed');
-                $mainBannerMore.addClass('hidden');
-                $toTopButton.removeClass('hidden');
-            } else {
-                whiteHeader = 0;
-                $header.removeClass('header__fixed');
-                $mainBannerMore.removeClass('hidden');
-                $toTopButton.addClass('hidden');
-            }
-        };
-
-        window.addEventListener('scroll', $.throttle(250, callbackScroll));
-    });
-</script>
+<script type="text/javascript" src="script/main.js"></script>
 </body>
 </html>
