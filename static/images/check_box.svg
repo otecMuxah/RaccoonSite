@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Слой_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="19px"
+	 viewBox="0 0 23 19" enable-background="new 0 0 23 19" xml:space="preserve">
+<switch>
+	<g i:extraneous="self">
+		<g>
+			<g>
+				<path fill="#828282" d="M19.022,3.962v11.24c0,1.072-0.38,1.989-1.143,2.749c-0.761,0.761-1.677,1.142-2.748,1.142H3.891
+					c-1.072,0-1.989-0.38-2.749-1.142C0.38,17.192,0,16.274,0,15.203V3.962c0-1.072,0.38-1.988,1.142-2.749
+					c0.761-0.761,1.678-1.142,2.749-1.142h11.24c1.072,0,1.988,0.381,2.748,1.142C18.642,1.975,19.022,2.891,19.022,3.962z
+					 M15.131,1.801H3.891c-0.595,0-1.103,0.212-1.527,0.634C1.941,2.859,1.729,3.368,1.729,3.962v11.24
+					c0,0.595,0.212,1.103,0.635,1.527c0.424,0.424,0.932,0.635,1.527,0.635h11.24c0.595,0,1.103-0.212,1.527-0.635
+					c0.424-0.424,0.634-0.932,0.634-1.527V3.962c0-0.594-0.211-1.103-0.634-1.527C16.235,2.013,15.726,1.801,15.131,1.801z"/>
+			</g>
+		</g>
+	</g>
+</switch>
+</svg>

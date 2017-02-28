@@ -267,7 +267,7 @@ body {
       transition: -webkit-transform 0.2s linear;
       transition: transform 0.2s linear;
       transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
-    .header-nav_item__dropdown:hover .header-nav_link:after {
+    .header-nav_item__show-dropdown .header-nav_link:after {
       -webkit-transform: translateY(-50%) rotate(180deg);
               transform: translateY(-50%) rotate(180deg);
       -webkit-transition: -webkit-transform 0.2s linear;
@@ -292,18 +292,10 @@ body {
       -webkit-transition: width 0.2s linear;
       transition: width 0.2s linear; }
     .header-nav_item__active:before {
-<<<<<<< HEAD
-<<<<<<< HEAD
       width: 100%;
       -webkit-transition: width 0.2s linear;
       transition: width 0.2s linear; }
-=======
-      width: 100%; }
->>>>>>> origin/master
-=======
-      width: 100%; }
->>>>>>> origin/master
-    .header-nav_item__active .header-nav_drop-wrapper {
+    .header-nav_item__show-dropdown .header-nav_drop-wrapper {
       display: block; }
   .header-nav_drop-wrapper {
     display: none;
@@ -2342,7 +2334,7 @@ body {
   width: 100%;
   background: #f0f0f0;
   padding: 60px 0; }
-  .pricing-form__wrapper {
+  .pricing-form_wrapper {
     max-width: 1140px;
     margin: 0 auto;
     display: -webkit-box;
@@ -2355,7 +2347,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .pricing-form__list {
+  .pricing-form_list {
     width: 100%;
     max-width: 840px;
     display: -webkit-box;
@@ -2365,9 +2357,9 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 25px; }
-  .pricing-form__item {
+  .pricing-form_item {
     position: relative; }
-    .pricing-form__item:before {
+    .pricing-form_item:before {
       content: '';
       position: absolute;
       top: 50%;
@@ -2378,9 +2370,9 @@ body {
       background: #778fcf;
       width: 52px;
       z-index: 4; }
-    .pricing-form__item:last-child:before {
+    .pricing-form_item:last-child:before {
       display: none; }
-  .pricing-form__link {
+  .pricing-form_link {
     font: 24px phenomenabold, Arial, sans-serif;
     color: #c6c6c6;
     height: 48px;
@@ -2399,7 +2391,7 @@ body {
     position: relative;
     padding: 0 20px;
     text-transform: uppercase; }
-    .pricing-form__link:after {
+    .pricing-form_link:after {
       content: '';
       width: 0;
       height: 0;
@@ -2412,10 +2404,10 @@ body {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
       z-index: 2; }
-    .pricing-form__item:not(:first-child) .pricing-form__link {
+    .pricing-form_item:not(:first-child) .pricing-form_link {
       padding-left: 50px;
       margin-left: -8px; }
-      .pricing-form__item:not(:first-child) .pricing-form__link:before {
+      .pricing-form_item:not(:first-child) .pricing-form_link:before {
         content: '';
         width: 0;
         height: 0;
@@ -2428,19 +2420,19 @@ body {
         -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
         z-index: 1; }
-    .pricing-form__item--active .pricing-form__link {
+    .pricing-form_item__active .pricing-form_link {
       background: #778fcf;
       color: #fff; }
-      .pricing-form__item--active .pricing-form__link:after {
+      .pricing-form_item__active .pricing-form_link:after {
         border-color: transparent transparent transparent #778fcf; }
-      .pricing-form__item--active .pricing-form__link .pricing-form__image {
+      .pricing-form_item__active .pricing-form_link .pricing-form_image {
         fill: #fff; }
-  .pricing-form__image {
+  .pricing-form_image {
     fill: #c6c6c6;
     width: 30px;
     height: 30px;
     margin-right: 20px; }
-  .pricing-form__form-wrapper {
+  .pricing-form_form-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2449,17 +2441,17 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 555px; }
-  .pricing-form__fistLastName {
+  .pricing-form_fistLastName {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .pricing-form__fistLastName .pricing-form__label {
+    .pricing-form_fistLastName .pricing-form_label {
       -ms-flex-preferred-size: 48%;
           flex-basis: 48%; }
-  .pricing-form__label {
+  .pricing-form_label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2470,7 +2462,7 @@ body {
     font: 12px roboto-light, Arial, sans-serif;
     color: #222;
     margin-bottom: 15px; }
-  .pricing-form__input, .pricing-form__textarea {
+  .pricing-form_input, .pricing-form_textarea {
     display: block;
     margin: 0;
     width: 100%;
@@ -2485,11 +2477,11 @@ body {
     box-sizing: border-box;
     padding: 0 10px;
     color: #222; }
-  .pricing-form__textarea {
+  .pricing-form_textarea {
     width: 100%;
     box-sizing: border-box;
     height: 120px; }
-  .pricing-form__buttons-holder {
+  .pricing-form_buttons-holder {
     width: 215px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2819,6 +2811,13 @@ body {
     padding: 15px 0;
     position: relative;
     margin-top: 20px; }
+  .radio-list_inner-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
   .radio-list_title {
     font: 12px roboto-light, Arial, sans-serif;
     position: absolute;
@@ -2847,7 +2846,8 @@ body {
     position: relative;
     display: block;
     color: #222;
-    font: 14px/18px roboto-light, Arial, sans-serif; }
+    font: 14px/18px roboto-light, Arial, sans-serif;
+    cursor: pointer; }
     .radio-list_label:before {
       content: '';
       position: absolute;
@@ -2875,3 +2875,36 @@ body {
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
         bottom: 0; }
+
+.checkbox_wrapper {
+  display: block; }
+
+.checkbox_label {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  color: #222;
+  font: 14px/18px roboto-light, Arial, sans-serif; }
+
+.checkbox_checkbox {
+  position: absolute;
+  left: -30px;
+  visibility: hidden; }
+  .checkbox_checkbox:checked + .checkbox_check {
+    background-image: url(../images/check_box_full.svg);
+    background-repeat: no-repeat; }
+
+.checkbox_check {
+  display: inline-block;
+  vertical-align: top;
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-image: url(../images/check_box.svg); }
+  .checkbox_check__small {
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+    margin-top: 3px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }

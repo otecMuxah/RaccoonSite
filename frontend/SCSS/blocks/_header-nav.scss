@@ -25,7 +25,7 @@
             transform: translateY(-50%);
             transition: transform 0.2s linear;
         }
-        .header-nav_item__dropdown:hover &:after {
+        .header-nav_item__show-dropdown &:after {
             transform: translateY(-50%) rotate(180deg);
             transition: transform 0.2s linear;
         }
@@ -53,6 +53,8 @@
                 width: 100%;
                 transition: width 0.2s linear;
             }
+        }
+        &__show-dropdown {
             .header-nav_drop-wrapper {
                 display: block;
             }

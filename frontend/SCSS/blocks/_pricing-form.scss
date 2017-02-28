@@ -2,21 +2,21 @@
     width: 100%;
     background: $color-almost-white;
     padding: 60px 0;
-    &__wrapper {
+    &_wrapper {
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    &__list {
+    &_list {
         width: 100%;
         max-width: 840px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 25px;
     }
-    &__item {
+    &_item {
         position: relative;
         &:before {
             content: '';
@@ -33,7 +33,7 @@
             display: none;
         }
     }
-    &__link {
+    &_link {
         font: 24px $font_ph_bold;
         color: $color-gary-2;
         height: 48px;
@@ -60,7 +60,7 @@
             z-index: 2;
         }
 
-        .pricing-form__item:not(:first-child) & {
+        .pricing-form_item:not(:first-child) & {
             padding-left: 50px;
             margin-left: -8px;
             &:before {
@@ -77,40 +77,40 @@
                 z-index: 1;
             }
         }
-        .pricing-form__item--active & {
+        .pricing-form_item__active & {
             background: $color-drk-blue;
             color: $color-white;
             &:after {
                 border-color: transparent transparent transparent $color-drk-blue;
             }
-            .pricing-form__image {
+            .pricing-form_image {
                 fill: $color-white;
             }
         }
     }
-    &__image {
+    &_image {
         fill: $color-gary-2;
         width: 30px;
         height: 30px;
         margin-right: 20px;
     }
-    &__form-wrapper {
+    &_form-wrapper {
         display: flex;
         flex-direction: column;
         width: 555px;
     }
-    &__form-item {
+    &_form-item {
 
     }
-    &__fistLastName {
+    &_fistLastName {
         display: flex;
         justify-content: space-between;
-        .pricing-form__label {
+        .pricing-form_label {
             flex-basis: 48%;
         }
 
     }
-    &__label {
+    &_label {
         display: flex;
         flex-direction: column;
         font: 12px $font_light;
@@ -118,8 +118,8 @@
         margin-bottom: 15px;
     }
 
-    &__input,
-    &__textarea {
+    &_input,
+    &_textarea {
         display: block;
         margin: 0;
         width: 100%;
@@ -133,13 +133,13 @@
         padding: 0 10px;
         color: $color-black;
     }
-    &__textarea {
+    &_textarea {
         width: 100%;
         box-sizing: border-box;
         height: 120px;
 
     }
-    &__buttons-holder {
+    &_buttons-holder {
         width: 215px;
         display: flex;
         justify-content: space-between;

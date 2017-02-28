@@ -8,7 +8,10 @@
         position: relative;
         margin-top: 20px;
     }
-    &_vertical {
+    &_inner-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
     }
     &_title {
         font: 12px $font_light;
@@ -36,7 +39,7 @@
         display: block;
         color: $color-black;
         font: 14px/18px $font_light;
-
+        cursor: pointer;
         &:before {
             content: '';
             position: absolute;
