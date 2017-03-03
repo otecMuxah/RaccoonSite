@@ -22,6 +22,9 @@
     &_item {
         width: 365px;
         margin-bottom: 20px;
+        @include small-phone {
+            width: 100%;
+        }
     }
     &_link {
         display: flex;

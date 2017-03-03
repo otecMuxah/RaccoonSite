@@ -3,10 +3,12 @@
     justify-content: space-between;
     width: 665px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 9;
     &_link {
         position: relative;
         color: $color-white;
-        font-family:  $font_ph_bold;
+        font-family: $font_ph_bold;
         font-size: 18px;
         line-height: 23px;
         .header__fixed & {
@@ -59,13 +61,31 @@
                 display: block;
             }
         }
+        @include tablet {
+            margin-bottom: 15px;
+            &:before {
+                content: '';
+                position: absolute;
+                left: -9px;
+                top: 0;
+                width: 3px;
+                height: 0;
+                bottom: auto;
+                transform: translate(0, 0);
+                background: $color-green;
+            }
+            &:hover:before {
+                width: 3px;
+                height: 22px;
+            }
+        }
     }
     &_drop-wrapper {
         display: none;
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: translate(-50%,90%);
+        transform: translate(-50%, 90%);
         min-width: 100%;
         padding-top: 60px;
     }
@@ -94,7 +114,7 @@
             border-style: solid;
             border-width: 0 10px 10px 10px;
             border-color: transparent transparent #778fcf;
-            transform: rotate(360deg) translate(-50%,-100%);
+            transform: rotate(360deg) translate(-50%, -90%);
         }
     }
     &_drop-item {
@@ -115,47 +135,27 @@
             color: $color-white;
         }
     }
-    @include width801 {
-
-    }
     @include tablet {
         flex-direction: column;
         position: absolute;
         background: #232c44;
         bottom: 0;
-        transform: translate(100%,100%);
+        transform: translate(0, -150%);
         width: 100%;
         box-sizing: border-box;
         left: 0;
-        padding: 12px;
+        padding: 25px;
         transition: transform 0.3s linear;
         overflow: hidden;
-        &_item {
-            margin-bottom: 15px;
-            &:before {
-                content: '';
-                position: absolute;
-                left: -4px;
-                top: 0;
-                width: 2px;
-                height: 0;
-                bottom: auto;
-                transform: translate(0,0);
-                background: $color-green;
-            }
-            &:hover:before {
-                width: 2px;
-                height: 22px;
-            }
-        }
+
         &_drop-wrapper {
             position: static;
-            transform: translate(0,0);
+            transform: translate(0, 0);
             padding-top: 0;
         }
     }
     &_visible {
-        transform: translate(0,100%);
+        transform: translate(0, 100%);
         transition: transform 0.3s ease-in;
         width: 100%;
     }
